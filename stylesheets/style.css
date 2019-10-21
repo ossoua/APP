@@ -1,0 +1,9 @@
+p {
+  font-family: Verdana;
+}
+.logo_produit {
+  width: 100px;
+}
+.header_menu {
+  display: flex;
+}
