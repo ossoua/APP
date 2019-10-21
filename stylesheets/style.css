@@ -1,9 +1,19 @@
 p {
   font-family: Verdana;
 }
-.logo_produit {
-  width: 100px;
+
+.drivingaces{
+  padding: 10px;
 }
-.header_menu {
+nav ul{
   display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 30%;
+}
+header{
+  display: flex;
+  align-items: center;
 }
