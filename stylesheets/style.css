@@ -1,27 +1,33 @@
 * {
   font-family: Verdana;
 }
+.header_left{
+  align-items: center;
+}
 
-.drivingaces{
+.padding_menu{
   padding: 10px;
 }
+
 nav ul{
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding-left: 30%;
 }
 header{
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  height: 150px;
 }
 
 h3 {
   font-style: normal;
 }
 
-.right p{
-  padding-left: 100px;
+.align{
+  align-items:center;
+  display: flex;
 }
