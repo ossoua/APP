@@ -1,5 +1,6 @@
 * {
   font-family: Verdana;
+  color: #707070;
 }
 .page{
   width: 100%;
@@ -23,10 +24,11 @@
 nav ul{
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
+
 header{
   display: flex;
   align-items: center;
