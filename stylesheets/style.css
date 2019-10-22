@@ -17,3 +17,11 @@ header{
   display: flex;
   align-items: center;
 }
+
+h3 {
+  font-style: normal;
+}
+
+.right p{
+  padding-left: 100px;
+}
