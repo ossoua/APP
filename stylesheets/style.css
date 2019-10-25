@@ -2,10 +2,17 @@
   font-family: Verdana;
   color: #707070;
 }
-.page{
+
+#page1{
   width: 100%;
-  margin:auto;
+  min-height: 800px;
 }
+#page2{
+  width: 100%;
+  min-height: 800px;
+}
+
+
 #logo{
   display: flex;
   flex-direction: row;
