@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+  color: #00E986;
+}
+#form {
+  margin:auto;
+  flex: center;
+  width: 100%;
+
+}
+label {
+  display:block;
+	text-align: justify;
+}
+
+input, textarea, select {
+ padding:4px;
+ border:1px solid #00A6EB;
+ border-radius:5px;
+ width:300px;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+}
+
+span.remarque {
+  color: #00A6EB;
+  font-size: 10px;
+}
+span.conditions {
+  color: #00A6EB
+}

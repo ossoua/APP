@@ -1,32 +1,80 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Inscription</title>
+    <link rel="stylesheet" href="stylesheets/style_header.css">
+    <link rel="stylesheet" href="stylesheets/style1.css">
   </head>
   <body>
-    <header>
-    </header>
-    <section>
-      <h1> Créez votre compte </h1>
-      <form method="post" action="traitement.php">
-        <p>
-          <label for="nom">Nom *</label>
-          <input type="text" name="nom" id="nom"/>
-          <label for="prénom">Prénom *</label>
-          <input type="text" name="prénom" id="prénom"/>
-          <label for="adresse">Adresse postale *</label>
-          <input type="text" name="adresse" id="adresse"/>
-          <label for="mail">Adresse mail *</label>
-          <input type="text" name="mail" id="mail"/>
-          <label for="motdepasse">Mot de passe *</label>
-          <input type="password" name="motdepasse" id="motdepasse"/>
-          <label for="motdepasse">Confirmez votre mot de passe *</label>
-          <input type="password" name="motdepasse" id="motdepasse"/>
+      <div id="page_accueil">
+        <header>
+            <div id="logo">
+              <img src="img/logo_produit.png" alt="Logo Produit" width="100px">
+              <img class="padding_menu" src="img/DrivingAces.png" alt="DrivingAces" width="230px">
+            </div>
 
-        </p>
-      </form>
-    </section>
+
+            <nav>
+              <ul>
+                <li>Accueil</li>
+                <img src="img/Ligne 1.png" alt="ligne">
+                <li>Découvrir DrivingAces®</li>
+                <img src="img/Ligne 1.png" alt="ligne">
+                <li>Nous rejoindre</li>
+                <img src="img/Ligne 1.png" alt="ligne">
+                <li>FAQ</li>
+              </ul>
+            </nav>
+
+
+            <div id="espace_client">
+                Espace client
+              <img class="padding_menu" src="img/user@2x.png" alt="icone_user" width="35px">
+            </div>
+        </header>
+
+        <section>
+          <h1> Créez votre compte </h1> </br>
+          <div id="form">
+            <form method="post" action="traitement.php">
+              <p>
+                
+                <label for="nom">Nom *</label>
+                <input type="text" name="nom" id="nom" autofocus required/>
+
+                <label for="prénom">Prénom *</label>
+                <input type="text" name="prénom" id="prénom"required/>
+
+                <label for="adresse">Adresse postale *</label>
+                <input type="text" name="adresse" id="adresse"required/>
+
+                <label for="mail">Adresse mail *</label>
+                <input type="email" name="mail" id="mail" required/>
+
+                <label for="motdepasse">Mot de passe *</label>
+                <input type="password" name="motdepasse" id="motdepasse"required/></br>
+                <span class="remarque">Assurez-vous qu'il comporte au moins 8 caractères, y compris un chiffre et une lettre majuscule</span>
+
+                <label for="motdepasse">Confirmez votre mot de passe *</label>
+                <input type="password" name="motdepasse" id="motdepasse" required/>
+
+                <label for="code">Code d'accès *</label>
+                <input type="text" name="code" id="code" required/>
+
+                <label for="conditions">J'ai lu et j'accepte les <span class=conditions>conditions générales d'utilisation</span> </label>
+                <input type="checkbox" name="conditions" id="conditions" required/></br>
+
+                <input type="submit" value="S'inscrire" /></br>
+                <div align="center">
+                  <font size=1>Vous avez déjà un compte ? <span class="remarque">Connectez-vous</span></font>
+                </div>
+
+
+              </p>
+
+            </form>
+        </section>
     <footer>
     </footer>
 
