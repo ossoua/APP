@@ -2,14 +2,6 @@
   font-family: Verdana;
 }
 
-#page_accueil{
-  min-height: 800px;
-  color: #707070;
-}
-#page2{
-  min-height: 800px;
-}
-
 
 #logo{
   display: flex;
@@ -35,6 +27,10 @@ nav ul{
 }
 
 header{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

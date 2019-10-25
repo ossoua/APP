@@ -2,6 +2,21 @@ body{
   overflow: hidden;
 }
 
+#page_accueil{
+  color: #707070;
+  padding-top: 130px;
+  text-align: center;
+}
+
+#presentation{
+  max-height: 800px;
+  width: 100%;
+  color: #707070;
+  display: flex;
+  align-items: flex-end;
+
+}
+
 #titre{
   display: block;
   margin-left: auto;
@@ -16,10 +31,8 @@ body{
 }
 
 section{
-  text-align: center;
-  padding-top: 30px;
   margin: auto;
-  min-height: 650px;
+  min-height: 800px;
 }
 
 .bandeau{
@@ -39,6 +52,10 @@ ul{
 }
 
 #personnage_presentation{
-  position: relative;
-  bottom: 0;
+  display: block;
+  height: 500px;
+}
+
+.text{
+  text-align: justify;
 }
