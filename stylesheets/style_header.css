@@ -1,14 +1,12 @@
 * {
   font-family: Verdana;
-  color: #707070;
 }
 
-#page1{
-  width: 100%;
+#page_accueil{
   min-height: 800px;
+  color: #707070;
 }
 #page2{
-  width: 100%;
   min-height: 800px;
 }
 
@@ -38,6 +36,7 @@ nav ul{
 
 header{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   border: solid;

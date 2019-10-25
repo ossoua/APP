@@ -1,0 +1,25 @@
+#titre{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+section{
+  text-align: center;
+  padding-top: 30px;
+  margin: auto;
+}
+
+.bandeau{
+  margin-top: 80px;
+  height: 180px;
+  background-color: #99D0F5;
+}
+
+ul{
+  text-align: center;
+  list-style-type: none;
+  color: black;
+  display: flex;
+}
