@@ -1,0 +1,48 @@
+section{
+  padding-top: 10%;
+}
+form {
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  align-content: center;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  color: #00E986;
+  margin: auto;
+}
+form label {
+  display:block;
+  text-align: left;
+	margin-top: 10px;
+  margin-bottom: 2%;
+}
+
+label, input{
+  padding-top :3%;
+
+}
+label.inline {
+  display: inline;
+}
+input, textarea, select {
+ padding:4px;
+ border:1px solid #00A6EB;
+ border-radius:5px;
+ width:100%;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+}
+input[type=checkbox]{
+  width:20px;
+  box-shadow: none;
+  cursor:pointer;
+}
+span.remarque {
+  color: #00A6EB;
+  font-size: 12px;
+}
+span.conditions {
+  color: #00A6EB
+}
