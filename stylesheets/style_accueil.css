@@ -32,7 +32,7 @@ body{
 
 section{
   margin: auto;
-  min-height: 800px;
+  min-height: 600px;
 }
 
 .bandeau{
@@ -54,8 +54,39 @@ ul{
 #personnage_presentation{
   display: block;
   height: 500px;
+  flex: 2;
 }
 
 .text{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-size: 2em;
+}
+
+#discover{
+  width: 80%;
+  padding-left: 40px;
+}
+
+p{
+  justify-content: center;
+  padding: 40px;
+  width: 80%;
   text-align: justify;
+}
+
+.nous_rejoindre{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+h3{
+  padding-right: 20px;
 }
