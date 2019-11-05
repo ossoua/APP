@@ -6,7 +6,7 @@ form {
   margin-left: 30%;
   margin-right: 30%;
   align-content: center;
-  text-align: center;
+  text-align: left;
 }
 h1 {
   text-align: center;
@@ -34,11 +34,7 @@ input, textarea, select {
  width:100%;
  box-shadow:1px 1px 2px #C0C0C0 inset;
 }
-input[type=checkbox]{
-  width:20px;
-  box-shadow: none;
-  cursor:pointer;
-}
+
 span.remarque {
   color: #00A6EB;
   font-size: 12px;
