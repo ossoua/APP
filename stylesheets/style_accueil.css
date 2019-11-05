@@ -51,14 +51,13 @@ ul{
   margin-right: 30px;
 }
 
-#personnage_presentation{
-  display: block;
+.personnage{
   height: 500px;
   flex: 2;
+  width: auto;
 }
 
 .text{
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,10 +82,37 @@ p{
 
 .nous_rejoindre{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 h3{
   padding-right: 20px;
+}
+
+.separation{
+  width: 100%;
+  height: 90px;
+  border-color: white;
+}
+
+h1.formulaire{
+  color:grey;
+}
+
+#formulaire{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.colonne{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+#envoyer{
+  margin-left: 50%;
 }
