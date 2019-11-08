@@ -32,13 +32,12 @@
           <img class="padding_menu" src="img/user@2x.png" alt="icone_user" width="35px">
         </div>
 
-    </header>
+      </header>
 
     <section>
         <h1> Créez votre compte </h1>
 
           <form method="post" action="traitement.php">
-            <p>
 
               <label for="nom">Nom *</label>
               <input type="text" name="nom" id="nom" autofocus required/>
@@ -63,13 +62,17 @@
               <input type="text" name="code" id="code" required/></br>
 
               <input type="checkbox" name="conditions" id="conditions" required/>
-              <label for="conditions" class=inline>J'ai lu et j'accepte les <span class=conditions>conditions générales d'utilisation</span> </label>
+              <label for="conditions" class=inline>J'ai lu et j'accepte les <a href="GCU.html">conditions générales d'utilisation</a> </label>
 
               <input type="submit" value="S'inscrire" /></br>
 
-              <font size=2>Vous avez déjà un compte ? <span class="remarque">Connectez-vous</span></font>
 
-            </p>
+              <font size=2>
+                <p> Vous avez déjà un compte ? <a href="Connexion.html">Connectez-vous</a> </p>
+
+                <p> * Champs obligatoires </p>
+              </font>
+
 
           </form>
     </section>

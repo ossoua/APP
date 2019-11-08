@@ -35,7 +35,18 @@ input, textarea, select {
  box-shadow:1px 1px 2px #C0C0C0 inset;
 }
 
-span.remarque {
+input[type=checkbox]{
+  width:16px;
+  height: 16px;
+  margin:0;
+  position: relative;
+  vertical-align: bottom;
+  box-shadow: none;
+  cursor:pointer;
+
+}
+
+a, span.remarque {
   color: #00A6EB;
   font-size: 12px;
 }
