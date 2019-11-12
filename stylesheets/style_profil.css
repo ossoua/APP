@@ -6,9 +6,44 @@ section{
 }
 table,
 td{
-    border: 1px solid #333;
+    border-collapse: collapse;
+    border: 1px solid;
     border-color: #00E986;
 }
-table{
-  width: 100%;
+
+input[type =search]{
+  padding: 5px 10px 5px 10px;
+  border:1px solid #1C96E8;
+  border-radius:100px;
+  width:180%;
+  box-shadow:1px 1px 2px #C0C0C0 inset;
+  margin: 0
+}
+
+nav > ul > li {
+  float: left;
+  position relative;
+
+}
+nav > ul > li ::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.menu{
+  display: none;
+}
+
+nav li:hover .menu{
+  display: inline-block;
+  top:100%;
+  padding: 0px;
+  left: 0px;
+  z-index: 1000;
+  text-align: left;
+}
+
+.menu li {
+  border-bottom: 1px solid #1C96E8;
 }
