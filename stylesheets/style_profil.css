@@ -1,0 +1,14 @@
+section{
+  padding-top: 20%
+}
+.tableau{
+
+}
+table,
+td{
+    border: 1px solid #333;
+    border-color: #00E986;
+}
+table{
+  width: 100%;
+}
