@@ -3,13 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 18, 2019 at 08:59 AM
+-- Generation Time: Nov 18, 2019 at 09:08 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -201,7 +199,6 @@ ALTER TABLE `user`
 --
 ALTER TABLE `user_boitier`
   MODIFY `id_user_boitier` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
