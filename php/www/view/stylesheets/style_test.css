@@ -1,9 +1,9 @@
 section{
-  padding-top: 20px;
+  padding-top: 200px;
 }
 
+
 table {
-  margin-left: 30%;
   margin-right: 30%;
 }
 table,
@@ -11,7 +11,7 @@ td{
     border-collapse: collapse;
     border: 1px solid;
     height: 50px;
-    width: 380px;
+    width: 1000px;
 }
 
 input[type =search]{
@@ -21,7 +21,4 @@ input[type =search]{
   width:180%;
   box-shadow:1px 1px 2px #C0C0C0 inset;
   outline-style: none;
-}
-p{
-  font-weight: bold;
 }
