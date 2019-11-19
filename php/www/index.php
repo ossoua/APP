@@ -11,7 +11,11 @@ switch ($request) {
     break;
 
   case '/user/inscription':
-    require __DIR__ . '/view/Inscription.html';
+    require __DIR__ . '/controller/inscription_control.php';
+    break;
+    
+  case '/user/connexion':
+    require __DIR__ . '/view/Connexion.html';
     break;
 
   default:

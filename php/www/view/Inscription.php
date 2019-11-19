@@ -31,16 +31,16 @@
 
 
     <div id="espace_client">
-      Espace client
+      <a href="/user/inscription">Espace client</a>
       <img class="padding_menu" src="/img/user@2x.png" alt="icone_user" width="35px">
     </div>
 
   </header>
 
   <section>
-    <h1> Créez votre compte </h1>
+    <h1> Créez votre compte</h1>
 
-    <form method="post" action="/index.php/user/inscription">
+    <form method="post" action="/user/inscription">
 
       <label for="name">Nom *</label>
       <input type="text" name="name" id="name" autofocus required />
@@ -71,7 +71,7 @@
 
 
       <font size=2>
-        <p> Vous avez déjà un compte ? <a href="Connexion.html">Connectez-vous</a> </p>
+        <p> Vous avez déjà un compte ? <a href="/user/connexion">Connectez-vous</a> </p>
 
         <p> * Champs obligatoires </p>
       </font>
