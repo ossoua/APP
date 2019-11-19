@@ -1,7 +1,9 @@
 <?php
-function majUser($user)
+class UserManager
 {
-    $db = dbConnect();
+  public function setUser($user)
+  {
+    $db = $this->dbConnect();
 
     $req = $db->prepare('UPDATE user SET password = :password, name = :name, first_name = :first_name, adress = :adress, mail = :mail WHERE access_code = :access_code');
     $req->execute(array(
@@ -12,16 +14,7 @@ function majUser($user)
       'mail' => $user['mail'],
       'access_code' => $user['access_code']
     ));
-}
 
-
-
-function dbConnect()
-{
-    try {
-        $db = new PDO('mysql:host=localhost;dbname=driving_aces;charset=utf8', 'root', 'root');
-        return $db;
-    } catch (Exception $e) {
-        die('Erreur: '.$e->getMessage());
-    }
+    echo "Inscription validée";
+  }
 }
