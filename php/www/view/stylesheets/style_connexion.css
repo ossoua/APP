@@ -8,10 +8,10 @@ form {
   align-content: center;
   text-align: left;
 }
-h1 {
-  text-align: center;
-  color: #00E986;
-  margin: auto;
+img.connexion {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 form label {
   display:block;

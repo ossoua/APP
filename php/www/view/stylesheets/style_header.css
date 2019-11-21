@@ -50,3 +50,17 @@ h3 {
   align-items: center;
   width: 10%;
 }
+
+footer {
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: solid;
+  border-color: #00E986;
+  border-width: 1px;
+  background-color: white;
+}

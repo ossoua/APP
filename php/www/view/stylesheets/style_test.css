@@ -1,19 +1,6 @@
 section{
-  padding-top: 200px;
+  padding-top: 50px;
 }
-
-
-table {
-  margin-right: 30%;
-}
-table,
-td{
-    border-collapse: collapse;
-    border: 1px solid;
-    height: 50px;
-    width: 1000px;
-}
-
 input[type =search]{
   padding: 5px 10px 5px 10px;
   border:1px solid #1C96E8;
@@ -21,4 +8,27 @@ input[type =search]{
   width:180%;
   box-shadow:1px 1px 2px #C0C0C0 inset;
   outline-style: none;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid;
+    height: 50px;
+}
+table, caption {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+p {
+  font-weight: bold;
+  text-align: right;
+}
+p, img {
+  vertical-align: middle;
 }
