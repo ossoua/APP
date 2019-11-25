@@ -4,12 +4,15 @@ require_once 'model/Manager.php';
 
 class UserManager extends Manager
 {
-  public function setUser($user)
-  {
-    $db = $this->dbConnect();
+    public function __construct()
+    {
+        $db = $this->dbConnect();
+    }
 
-    $req = $db->prepare('UPDATE user SET password = :password, name = :name, first_name = :first_name, adress = :adress, mail = :mail WHERE access_code = :access_code');
-    $req->execute(array(
+    public function setUser($user)
+    {
+        $req = $db->prepare('UPDATE user SET password = :password, name = :name, first_name = :first_name, adress = :adress, mail = :mail WHERE access_code = :access_code');
+        $req->execute(array(
       'password' => $user['password'],
       'name'  => $user['name'],
       'first_name' => $user['first_name'],
@@ -18,6 +21,6 @@ class UserManager extends Manager
       'access_code' => $user['access_code']
     ));
 
-    echo "Inscription validée";
-  }
+        echo "Inscription validée";
+    }
 }
