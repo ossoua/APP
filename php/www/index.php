@@ -18,6 +18,14 @@ switch ($request) {
     require __DIR__ . '/controller/connection_control.php';
     break;
 
+  case '/user/profile':
+    require __DIR__ . '/view/Profil.html';
+    break;
+
+  case '/user/logout':
+    require __DIR__ . '/controller/logout.php';
+    break;
+
   default:
     http_response_code(404);
     require __DIR__ . '/404.php';

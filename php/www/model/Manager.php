@@ -9,4 +9,13 @@ abstract class Manager{
           die('Erreur: '.$e->getMessage());
       }
   }
+
+  function checkConnection($mail,$password){
+
+    $sql = "SELECT * FROM user WHERE mail='$mail'";
+    $result = mysqli_query($db,$sql);
+    if (mysqli_num_rows($result) > 0){
+      echo 'Utilisateur trouvé';
+    }
+    
 }

@@ -12,20 +12,29 @@ else {
   echo '<pre>';
   var_dump($_SESSION['connection']); // On affiche les infos concernant notre objet.
   echo '</pre>';
+  ?>
+  <a href="logout">Se déconnecter</a>
+  <?php
 }
 
-function newConnection(){
 
+
+
+
+
+
+function newConnection(){
     require 'view/Connection.php';
 
     if(isset($_POST['mail']) && isset($_POST['password'])){
       $connection = new ConnectionManager ($_POST['mail'],$_POST['password']);
       $_SESSION['connection'] = $connection;
 
+      
       echo 'Actualiser';
     }
-
 }
 
 
- ?>
+
+}
