@@ -27,12 +27,13 @@ label, input{
 label.inline {
   display: inline;
 }
-input, textarea, select {
+input, textarea {
  padding:4px;
  border:1px solid #1C96E8;
  border-radius:5px;
  width:100%;
  box-shadow:1px 1px 2px #C0C0C0 inset;
+ outline-style: none;
 }
 
 input[type=checkbox]{
