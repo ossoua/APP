@@ -12,19 +12,19 @@
 <body>
   <header>
     <div id="logo">
-      <img src="/img/logo_produit.png" alt="Logo Produit" width="100px">
-      <img class="padding_menu" src="/img/DrivingAces.png" alt="DrivingAces" width="230px">
+      <img src="/view/img/logo_produit.png" alt="Logo Produit" width="100px">
+      <img class="padding_menu" src="/view/img/DrivingAces.png" alt="DrivingAces" width="230px">
     </div>
 
 
     <nav>
       <ul>
         <li><a href="#page_accueil">Accueil</a></li>
-        <img src="/img/Ligne 1.png" alt="ligne">
+        <img src="/view/img/Ligne 1.png" alt="ligne">
         <li>Découvrir DrivingAces®</li>
-        <img src="/img/Ligne 1.png" alt="ligne">
+        <img src="/view/img/Ligne 1.png" alt="ligne">
         <li>Nous rejoindre</li>
-        <img src="/img/Ligne 1.png" alt="ligne">
+        <img src="/view/img/Ligne 1.png" alt="ligne">
         <li>FAQ</li>
       </ul>
     </nav>
@@ -32,7 +32,7 @@
 
     <div id="espace_client">
       <a href="/user/inscription">Espace client</a>
-      <img class="padding_menu" src="/img/user@2x.png" alt="icone_user" width="35px">
+      <img class="padding_menu" src="/view/img/user@2x.png" alt="icone_user" width="35px">
     </div>
 
   </header>
@@ -71,7 +71,7 @@
 
 
       <font size=2>
-        <p> Vous avez déjà un compte ? <a href="/user/connexion">Connectez-vous</a> </p>
+        <p> Vous avez déjà un compte ? <a href="/user/connection">Connectez-vous</a> </p>
 
         <p> * Champs obligatoires </p>
       </font>

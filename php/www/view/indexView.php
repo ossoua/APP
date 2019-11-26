@@ -31,7 +31,7 @@
 
 
     <div id="espace_client">
-      <a href="/user/inscription">Espace client</a>
+      <a href="/user/connection">Espace client</a>
       <img class="padding_menu" src="./view/img/user@2x.png" alt="icone_user" width="35px">
     </div>
 

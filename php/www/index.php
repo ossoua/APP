@@ -3,19 +3,19 @@ $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
   case '/':
-    require __DIR__ . '/view/indexView.html';
+    require __DIR__ . '/view/indexView.php';
     break;
 
   case '':
-    require __DIR__ . '/view/indexView.html';
+    require __DIR__ . '/view/indexView.php';
     break;
 
   case '/user/inscription':
     require __DIR__ . '/controller/inscription_control.php';
     break;
 
-  case '/user/connexion':
-    require __DIR__ . '/controller/connexion_control.php';
+  case '/user/connection':
+    require __DIR__ . '/controller/connection_control.php';
     break;
 
   default:
