@@ -32,12 +32,13 @@ function newConnection(){
             $connection = new ConnectionManager ($_POST['mail'],$_POST['password']);
             $_SESSION['connection'] = $connection;
             echo 'Connexion établie';
+            header('Location: /user/tests');
         }
         catch (Exception $e) {
             echo 'Connexion échouée';
         }
 
-        header('Location: /user/tests');
+
       }
 
 }
