@@ -26,8 +26,8 @@ table, caption {
   margin-bottom: 50px;
 }
 p {
-  font-weight: bold;
   text-align: right;
+  margin: 0;
 }
 p, img {
   vertical-align: middle;

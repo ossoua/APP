@@ -1,8 +1,10 @@
 * {
-  font-family: Verdana;
+  font-family: Arial;
 }
 
-
+body{
+  margin: 0;
+}
 #logo{
   display: flex;
   flex-direction: row;
@@ -27,7 +29,7 @@ nav ul{
 }
 
 header{
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 0;
   right: 0;
@@ -35,10 +37,8 @@ header{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border: solid;
-  border-color: #707070;
-  border-width: 1px;
   background-color: white;
+  box-shadow:0px 2px 2px #C0C0C0;
 }
 
 h3 {
@@ -53,14 +53,11 @@ h3 {
 
 footer {
   position: absolute;
-  position: fixed;
-  bottom: 0;
+  height: 40px;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
-  border-top: solid;
-  border-color: #00E986;
-  border-width: 1px;
   background-color: white;
+  box-shadow:0px -2px 2px #C0C0C0;
 }
