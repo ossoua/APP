@@ -55,7 +55,6 @@
 
               <p> * Champs obligatoires </p>
             </font>
-
           </form>
     </section>
     <footer>
