@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>Mes tests</title>
-  <link rel="stylesheet" href="stylesheets/style_header.css">
-  <link rel="stylesheet" href="stylesheets/style_accueil.css">
-  <link rel="stylesheet" href="stylesheets/style_test.css">
+  <link rel="stylesheet" href="/view/stylesheets/style_header.css">
+  <link rel="stylesheet" href="/view/stylesheets/style_accueil.css">
+  <link rel="stylesheet" href="/view/stylesheets/style_test.css">
 
 </head>
 <body>
   <header>
     <div id="logo">
-    <img src="img/logo_produit.png" alt="Logo Produit" width="100px">
-      <img class="padding_menu" src="img/DrivingAces.png" alt="DrivingAces" width="230px">
+    <img src="/view/img/logo_produit.png" alt="Logo Produit" width="100px">
+      <img class="padding_menu" src="/view/img/DrivingAces.png" alt="DrivingAces" width="230px">
     </div>
 
 
@@ -20,17 +20,17 @@
       <input type="search" placeholder="Rechercher sur le site..."/>
     </div>
     <div class="help">
-      <a href="FAQ.html"><img src="img/help.png" alt="Help" width="25px" title="Besoin d'aide ? FAQ"></a>
+      <a href="FAQ.html"><img src="/view/img/help.png" alt="Help" width="25px" title="Besoin d'aide ? FAQ"></a>
     </div>
 
 
     <div id="profil">
-     <a href="Profil.html"><img class="padding_menu" src="img/account.png" alt="icone_user" width="35px"></a>
+     <a href="Profil.html"><img class="padding_menu" src="/view/img/account.png" alt="icone_user" width="35px"></a>
     </div>
 
   </header>
   <section>
-    <p> Imprimer mes résultats <img src="img/print.png" alt="Print" width="20px" title="Imprimer"> </p>
+    <p> Imprimer mes résultats <img src="/view/img/print.png" alt="Print" width="20px" title="Imprimer"> </p>
 
     <table>
       <caption> Mes tests </caption>

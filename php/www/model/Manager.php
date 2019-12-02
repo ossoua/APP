@@ -13,11 +13,28 @@ abstract class Manager
 
     protected function checkConnection($mail, $password)
     {
+        $db = $this->dbConnect();
 
-        $sql = "SELECT * FROM user WHERE mail='$mail'";
-        $result = mysqli_query($db, $sql);
-        if (mysqli_num_rows($result) > 0) {
-            echo 'Utilisateur trouvé';
+        $req = $db->prepare('SELECT * FROM user WHERE mail = :mail');
+        $req->execute(array(':mail' => $mail));
+
+
+        $count = $req->rowCount();
+        if ($count > 0) {
+            $req_password = $db->prepare('SELECT password FROM user WHERE mail = :mail');
+            $req_password->execute(array(':mail' => $mail));
+            $data = $req_password->fetch();
+
+            if ($data['password']==$password) {
+                echo 'Utilisateur trouvé';
+                return true;
+            }
+            else{
+                echo 'Mot de passe incorrect';
+            }
+        }
+        else{
+            echo 'Utilisateur introuvable';
         }
 
     }

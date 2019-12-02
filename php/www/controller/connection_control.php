@@ -27,12 +27,19 @@ function newConnection(){
     require 'view/Connection.php';
 
     if(isset($_POST['mail']) && isset($_POST['password'])){
-      $connection = new ConnectionManager ($_POST['mail'],$_POST['password']);
-      $_SESSION['connection'] = $connection;
 
-      
-      echo 'Actualiser';
-    }
+        try{
+            $connection = new ConnectionManager ($_POST['mail'],$_POST['password']);
+            $_SESSION['connection'] = $connection;
+            echo 'Connexion établie';
+        }
+        catch (Exception $e) {
+            echo 'Connexion échouée';
+        }
+
+        header('Location: /user/tests');
+      }
+
 }
 
 

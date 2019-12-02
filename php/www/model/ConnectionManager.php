@@ -9,11 +9,18 @@ class ConnectionManager extends Manager
 
     public function __construct($mail,$password)
     {
-        checkConnection($mail,$password);
-        $this->mail = $mail;
-        $this->password = $password;
-
-        $db = $this->dbConnect();
+        if ($this->checkConnection($mail,$password)) {
+            $this->mail = $mail;
+            $this->password = $password;
+            $db = $this->dbConnect();
+        }
+        else{
+            throw new Exception( "Identifiants incorrects" );
+        }
     }
+
+
+
+
 
 }
