@@ -47,10 +47,16 @@ session_start();
         <th width="150px">Date </th>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>M.RICHARD</td>
+        <td>Température de la peau</td>
+        <td>37°</td>
+        <td>25/11/2019</td>
+      </tr>
+      <tr>
+        <td>M.RICHARD</td>
+        <td>Fréquence cardiaque</td>
+        <td>100bpm</td>
+        <td>25/11/2019</td>
       </tr>
       <tr>
         <td></td>
