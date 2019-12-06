@@ -41,6 +41,12 @@ header{
   box-shadow:0px 2px 2px #C0C0C0;
 }
 
+#espace_client{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 h3 {
   font-style: normal;
 }

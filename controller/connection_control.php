@@ -9,12 +9,7 @@ if (!isset($_SESSION['connection'])){
   newConnection();
 }
 else {
-  echo '<pre>';
-  var_dump($_SESSION['connection']); // On affiche les infos concernant notre objet.
-  echo '</pre>';
-  ?>
-  <a href="logout">Se déconnecter</a>
-  <?php
+    header('Location: /user/tests');
 }
 
 
