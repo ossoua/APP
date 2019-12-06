@@ -16,7 +16,7 @@
 
         <nav>
           <ul>
-            <li><a href="#page_accueil">Accueil</a></li>
+            <li><a href="/">Accueil</a></li>
             <img src="/view/img/Ligne 1.png" alt="ligne">
             <li>Découvrir DrivingAces®</li>
             <img src="/view/img/Ligne 1.png" alt="ligne">
