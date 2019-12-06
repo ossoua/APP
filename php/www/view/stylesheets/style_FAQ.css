@@ -104,13 +104,3 @@ input[type =search]{
         margin-top: -3px;
         right: 10px;
 }
-
-a /* Liens par défaut (non survolés) */
-{
-  color: #00A6EB;
-}
-
-a:visited /* Quand le visiteur a déjà vu la page concernée */
-{
-    color: #c0e0ed; /* Appliquer une couleur grise */
-}
