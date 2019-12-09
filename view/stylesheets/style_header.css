@@ -29,7 +29,6 @@ nav ul{
 }
 
 header{
-  
   width: 100%;
   left: 0;
   right: 0;
@@ -40,6 +39,7 @@ header{
   background-color: white;
   box-shadow:0px 2px 2px #C0C0C0;
 }
+
 
 #espace_client{
   display: flex;

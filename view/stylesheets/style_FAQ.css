@@ -24,6 +24,7 @@ input[type =search]{
         margin: auto;
 }
 
+
 /* Masquer les checkbox et les paragraphes */
 .faq-section input,
 .faq-section p{

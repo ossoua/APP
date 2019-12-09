@@ -1,6 +1,5 @@
 <?php
-session_start();
-
+require_once './controller/test_control.php';
 
 ?>
 <!DOCTYPE html>
@@ -41,29 +40,12 @@ session_start();
     <table>
       <caption> Mes tests </caption>
       <tr>
-        <th width="250px">Nom du spécialiste </th>
-        <th width="250px">Nom du test </th>
-        <th width="600px">Résultats </th>
-        <th width="150px">Date </th>
+        <th width="250px">Nom du spécialiste</th>
+        <th width="250px">Nom du test</th>
+        <th width="600px">Résultats</th>
+        <th width="150px">Date</th>
       </tr>
-      <tr>
-        <td>M.RICHARD</td>
-        <td>Température de la peau</td>
-        <td>37°</td>
-        <td>25/11/2019</td>
-      </tr>
-      <tr>
-        <td>M.RICHARD</td>
-        <td>Fréquence cardiaque</td>
-        <td>100bpm</td>
-        <td>25/11/2019</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+      <?php display_test(); ?>
 
     </table>
     <p>

@@ -30,9 +30,18 @@ switch ($request) {
         require __DIR__ .'/view/Tests.php';
         break;
 
+    case '/FAQ':
+        require __DIR__ .'/view/FAQ2.php';
+        break;
 
   default:
     http_response_code(404);
     require __DIR__ . '/404.php';
     break;
 }
+
+//AUTO-LOAD Classes
+spl_autoload_register(function($class) {
+    require_once './model/' . $class . '.php';
+}
+);

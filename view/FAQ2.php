@@ -3,32 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>FAQ</title>
-    <link rel="stylesheet" href="stylesheets/style_FAQ.css">
-    <link rel="stylesheet" href="stylesheets/style_header.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_FAQ.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_header.css">
 
   </head>
   <body>
+  <?php
+  require 'header_user.php'
+  ?>
 
-  <header class="header">
-    <div id="logo" >
-      <img src="/view/img/DrivingAces.png" alt="DrivingAces" width="200">
-    </div>
-
-    <div id="searchbar">
-      <input type="search" placeholder="Rechercher sur le site..."/>
-    </div>
-
-    <div id="help">
-      <a href="FAQ.html"><img src="/view/img/help.png" alt="help" width="25px" title="Besoin d'aide ? FAQ"></a>
-    </div>
-
-    <div id=profil>
-      <img src="/view/img/account.png" alt="profil">
-    </div>
-
-    </div>
-  </header>
-    <section class="faq-section">
+    <section class="faq-section" id="1">
       <input type="checkbox" id="q1">
       <label for="q1">Où trouver le résultat de mes tests ?</label>
       <p>Pour trouvez les résultats de vos tests... </br></p>
