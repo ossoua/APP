@@ -5,7 +5,7 @@ require_once 'model/Manager.php';
 class TestManager extends Manager
 {
 
-  private $data, $db;
+  private $db;
 
   public function __construct()
   {
@@ -26,6 +26,23 @@ class TestManager extends Manager
         }
         catch (PDOException $e){
             print $e->getMessage();
+        }
+    }
+
+    public function display_test()
+    {
+        if (isset($_SESSION['id_user'])){
+            $test = new TestManager();
+            $data = $test->getData($_SESSION['id_user']);
+            foreach ($data as $row) {
+                echo '<tr>
+                    <td>'.$row['id_user'].'</td>
+                    <td>'.$row['nom'].'</td>
+                    <td>'.$row['value'].'</td>
+                    <td>'.$row['date'].'</td>
+                  </tr>';
+
+            }
         }
     }
 }

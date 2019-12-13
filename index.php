@@ -27,7 +27,7 @@ switch ($request) {
         break;
 
     case '/user/tests':
-        require __DIR__ .'/view/Tests.php';
+        require __DIR__ .'/controller/test_control.php';
         break;
 
     case '/FAQ':

@@ -6,25 +6,11 @@ session_start();
 
 if (isset($_SESSION['id_user'])){
     $test = new TestManager();
+    require './view/Tests.php';
 }
 else {
-    header('Location: /user/tests');
+    header('Location: /user/connection');
 }
 
-function display_test()
-{
-    if (isset($_SESSION['id_user'])){
-        $test = new TestManager();
-        $data = $test->getData($_SESSION['id_user']);
-        foreach ($data as $row) {
-            echo '<tr>
-                    <td>'.$row['id_user'].'</td>
-                    <td>'.$row['nom'].'</td>
-                    <td>'.$row['value'].'</td>
-                    <td>'.$row['date'].'</td>
-                  </tr>';
 
-        }
-    }
-}
 

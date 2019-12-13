@@ -1,7 +1,3 @@
-<?php
-require_once './controller/test_control.php';
-
-?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -45,7 +41,7 @@ require_once './controller/test_control.php';
         <th width="600px">Résultats</th>
         <th width="150px">Date</th>
       </tr>
-      <?php display_test(); ?>
+      <?= $test->display_test(); ?>
 
     </table>
     <p>
