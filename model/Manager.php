@@ -25,7 +25,7 @@ abstract class Manager
             $req_password->execute(array(':mail' => $mail));
             $data = $req_password->fetch();
 
-            if ($data['password']==$password) {
+            if (password_verify($password,$data['password'])) {
                 echo 'Utilisateur trouvé';
                 return true;
             }

@@ -5,7 +5,11 @@ if (isset($_POST['password']) && isset($_POST['name']) && isset($_POST['first_na
 
     if ($_POST['password'] == $_POST['password_check']) {
         $user = new UserManager();
-        $user -> setUser($_POST);
+
+        //Password Hash
+        $hashed_password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+        $user -> setUser($_POST,$hashed_password);
     } else {
         echo 'Les mots de passe ne correspondent pas.';
     }
