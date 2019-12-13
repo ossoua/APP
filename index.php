@@ -27,12 +27,21 @@ switch ($request) {
         break;
 
     case '/user/tests':
-        require __DIR__ .'/view/Tests.php';
+        require __DIR__ .'/controller/test_control.php';
         break;
 
+    case '/FAQ':
+        require __DIR__ .'/view/FAQ2.php';
+        break;
 
   default:
     http_response_code(404);
     require __DIR__ . '/404.php';
     break;
 }
+
+//AUTO-LOAD Classes
+spl_autoload_register(function($class) {
+    require_once './model/' . $class . '.php';
+}
+);

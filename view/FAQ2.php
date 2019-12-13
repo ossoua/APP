@@ -3,42 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>FAQ</title>
-    <link rel="stylesheet" href="stylesheets/style_FAQ.css">
-    <link rel="stylesheet" href="stylesheets/style_header.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_FAQ.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_header.css">
 
   </head>
   <body>
+  <?php
+  require 'header_user.php'
+  ?>
 
-  <header class="header">
-    <div id="logo" >
-      <img src="/view/img/DrivingAces.png" alt="DrivingAces" width="200">
-    </div>
-
-    <div id="searchbar">
-      <input type="search" placeholder="Rechercher sur le site..."/>
-    </div>
-
-    <div id="help">
-      <a href="FAQ.html"><img src="/view/img/help.png" alt="help" width="25px" title="Besoin d'aide ? FAQ"></a>
-    </div>
-
-    <div id=profil>
-      <img src="/view/img/account.png" alt="profil">
-    </div>
-
-    </div>
-  </header>
-    <section class="faq-section">
+    <section class="faq-section" id="1">
       <input type="checkbox" id="q1">
       <label for="q1">Où trouver le résultat de mes tests ?</label>
       <p>Pour trouvez les résultats de vos tests... </br></p>
-      <p class="rep"><strong>... connectez-vous sur le site de Navajo et rendez-vous sur <a href="Tests.php">l'espace client</a> !</strong></p>
+      <p class="rep"><strong>... connectez-vous sur le site ne Navajo et rendez-vous sur l'espace client en haut à droite !</strong></p>
     </section>
     <section class="faq-section">
       <input type="checkbox" id="q2">
       <label for="q2">Comment devenir Administrateur ? </label>
       <p>Pour devenir Administrateur, rendez-vous sur ... </br></p>
-      <p class="rep"><strong>...la page pour <a href="Admin.html">devenir Administrateur</a> !</strong></p>
+      <p class="rep"><strong>...Espace client puis Profil. Un lien apparapitra pour faire votre demande Administrateur</strong></p>
     </section>
     <section class="faq-section">
       <input type="checkbox" id="q3">

@@ -21,11 +21,11 @@
       <ul>
         <li><a href="#page_accueil">Accueil</a></li>
         <img src="/view/img/Ligne 1.png" alt="ligne">
-        <li>Découvrir DrivingAces®</li>
-        <img src="/view/img/Ligne 1.png" alt="ligne">
-        <li>Nous rejoindre</li>
-        <img src="/view/img/Ligne 1.png" alt="ligne">
-        <li>FAQ</li>
+          <li><a href="/#link_presentation">Découvrir DrivingAces®</a></li>
+          <img src="/view/img/Ligne 1.png" alt="ligne">
+          <li><a href="/#link_formulaire">Nous rejoindre</a></li>
+          <img src="/view/img/Ligne 1.png" alt="ligne">
+          <li><a href="/FAQ">FAQ</a></li>
       </ul>
     </nav>
 
