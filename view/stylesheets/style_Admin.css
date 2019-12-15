@@ -23,3 +23,29 @@ h1
 {
   text-align: center;
 }
+
+form {
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  align-content: center;
+  text-align: left;
+}
+
+input, textarea {
+ padding:7px;
+ border:1px solid  #00E986;
+ border-radius:5px;
+ width:100%;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ outline-style: none;
+ margin:12px;
+
+}
+input[type =submit]{
+  width:30%;
+  align: right;
+  background-color: #00E986;
+  box-shadow: none;
+  margin-top: 12px;
+}
