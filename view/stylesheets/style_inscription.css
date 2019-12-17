@@ -44,9 +44,7 @@ input[type=checkbox]{
   vertical-align: bottom;
   box-shadow: none;
   cursor:pointer;
-
 }
-
 a, span.remarque {
   color: #1C96E8;
   font-size: 12px;
