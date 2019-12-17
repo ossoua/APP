@@ -38,7 +38,8 @@
   </header>
 
   <section>
-    <h1> Créez votre compte</h1>
+      <h1> Créez votre compte</h1>
+      <p class="error"><?php echo $_SESSION['error'] ?></p>
 
     <form method="post" action="/user/inscription">
 
@@ -56,7 +57,7 @@
 
       <label for="password">Mot de passe *</label>
       <input type="password" name="password" id="password" required /></br>
-      <span class="remarque">Assurez-vous qu'il comporte au moins 8 caractères, y compris un chiffre et une lettre majuscule</span>
+      <span class="remarque">Assurez-vous qu'il comporte au moins 8 caractères</span>
 
       <label for="password_check">Confirmez votre mot de passe *</label>
       <input type="password" name="password_check" id="password_check" required />

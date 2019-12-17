@@ -52,5 +52,10 @@ a, span.remarque {
   font-size: 12px;
 }
 span.conditions {
-  color: #00A6EB
+  color: #00A6EB;
+}
+
+p.error {
+    text-align: center;
+    color: red;
 }

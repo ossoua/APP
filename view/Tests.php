@@ -26,7 +26,7 @@
 
     <div id="profil">
         <a href="/user/logout">Déconnexion</a>
-        <a href="Profil.html"><img class="padding_menu" src="/view/img/account.png" alt="icone_user" width="35px"></a>
+        <a href="Profil.html"><img class="padding_menu" src="/view/img/account.png" alt="icone_user" width="35px"> </a>
     </div>
 
   </header>
