@@ -39,7 +39,7 @@ switch ($request) {
         break;
 
     case '/backoffice':
-        require __DIR__ .'/controller/backoffice_controller.php';
+        require __DIR__ . '/controller/backoffice/backoffice_controller.php';
         break;
 
   default:

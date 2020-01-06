@@ -30,13 +30,16 @@
 <section>
     <h1>Rechercher un utilisateur</h1>
 
+
     <input id="search" type="text" autocomplete="off" />
+
     <div id="results">
         <p><strong>Utilisateurs trouvés:</strong></p>
-        <?= $back_office->display_users(); ?>
     </div>
+
 </section>
 
+<script src="./controller/backoffice/autocompletion.js"></script>
 </body>
 </html>
 

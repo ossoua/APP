@@ -1,11 +1,13 @@
 <?php
 
-require_once './model/Manager.php';
+require_once '/Users/theomartinez/Cours/APP/WEB/www/model/Manager.php';
 
 
 class BackofficeManager extends Manager
 {
     private $data;
+    private $users = array();
+
     public function __construct(){
         $db = $this->dbConnect();
 
@@ -22,15 +24,15 @@ class BackofficeManager extends Manager
         return $this->data;
     }
 
-    function display_users()
+    function getUsers()
     {
-        foreach ($this->data as $row) {
-            echo '<br>
-                    <td>'.$row['name'].'</td>
-                    <td>'.$row['first_name'].'</td>
-                    </br>
-                  </tr>';
+        $i=0;
+        foreach ($this->data as $row){
+            $this->users[$i] = $row['first_name'] . " " . $row['name'];
+            $i++;
         }
+
+        return $this->users;
     }
 
 
