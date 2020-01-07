@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Devenir Administrateur</title>
-    <link rel="stylesheet" href="stylesheets/style_Admin.css">
-    <link rel="stylesheet" href="stylesheets/style_header.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_Admin.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_header.css">
 
   </head>
   <body>
     <header>
       <div id="logo" >
-        <img src="img/DrivingAces.png" alt="DrivingAces" width="200">
+        <img src="/view/img/DrivingAces.png" alt="DrivingAces" width="200">
       </div>
 
       <div id="searchbar">
@@ -18,18 +18,18 @@
       </div>
 
       <div id="help">
-        <a href="FAQ.html"><img src="img/help.png" alt="help" width="25px" title="Besoin d'aide ? FAQ"></a>
+        <a href="FAQ.html"><img src="/view/img/help.png" alt="help" width="25px" title="Besoin d'aide ? FAQ"></a>
       </div>
 
       <div id=profil>
-        <img src="img/account.png" alt="profil">
+        <img src="/view/img/account.png" alt="profil">
       </div>
     </header>
 
     <h1>Devenir Administrateur</h1>
 
     <section>
-      <form action="send_email.php" method="post">
+      <form action="/controller/admin_control.php" method="post">
 
         <p class="marge">
             <input type="text" id="nom" name="nom" placeholder="Nom *" />
