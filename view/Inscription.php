@@ -41,6 +41,10 @@
       <h1> Créez votre compte</h1>
       <p class="error"><?php echo $_SESSION['error'] ?></p>
 
+      <form action="">
+
+      </form>
+
     <form method="post" action="/user/inscription">
 
       <label for="name">Nom *</label>

@@ -38,5 +38,9 @@ abstract class Manager
         }
 
     }
+
+    protected function charEscape($text){
+        
+    }
 }
 
