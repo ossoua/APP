@@ -10,8 +10,6 @@ if (isset($_POST['password']) && isset($_POST['name']) && isset($_POST['first_na
     require_once 'model/UserManager.php';
     require 'view/Inscription.php';
 
-
-
     //Checking matching passwords
     if ($_POST['password'] == $_POST['password_check']) {
         $password = $_POST['password'];
@@ -22,10 +20,18 @@ if (isset($_POST['password']) && isset($_POST['name']) && isset($_POST['first_na
 
             $user = new UserManager();
 
+            $name = $user -> charEscape($_POST['name']);
+            $first_name = $user -> charEscape($_POST['first_name']);
+            $adress = $user -> charEscape($_POST['adress']);
+            $mail = $user -> charEscape($_POST['mail']);
+            $access_code = $_POST['access_code'];
+
+            $password = $user -> charEscape($password);
+
             //Password Hash
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-            $user -> setUser($_POST,$hashed_password);
+            $user -> setUser($name,$first_name,$adress,$mail,$access_code,$hashed_password);
             header('Location: /user/connection');
         }
         else{

@@ -42,6 +42,10 @@ switch ($request) {
         require __DIR__ . '/controller/backoffice/backoffice_controller.php';
         break;
 
+    case '/test':
+        require __DIR__ . '/test.php';
+        break;
+
   default:
     http_response_code(404);
     require __DIR__ . '/404.php';

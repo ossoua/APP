@@ -39,8 +39,26 @@ abstract class Manager
 
     }
 
-    protected function charEscape($text){
-        
+    public function charEscape($text){
+        $textEncode = "";
+        for ($i = 0; $i < strlen($text); $i++) {
+            if ($text[$i] == '&') {
+                $textEncode = $textEncode . "&amp;";
+            } else if ($text[$i] == '<') {
+                $textEncode = $textEncode . "&lt;";
+            } else if ($text[$i] == '>') {
+                $textEncode = $textEncode . "&gt;";
+            } else if ($text[$i] == '"') {
+                $textEncode = $textEncode . "&quot;";
+            } else if ($text[$i] == "'") {
+                $textEncode = $textEncode . "&#x27;";
+            } else if ($text[$i] == "/") {
+                $textEncode = $textEncode . "&#x2F;";
+            } else {
+                $textEncode = $textEncode . $text[$i];
+            }
+        }
+        return $textEncode;
     }
 }
 

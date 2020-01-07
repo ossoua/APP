@@ -1,23 +1,8 @@
 <?php
 
-function charEscape($password) {
-	for($i=0; $i<strlen($password); $i++) {
-		if (strcmp($password[i], "&")) {
-			$password[i] = "\&";
-		}
-		else if (strcmp($password[i], "<")) {
-			$password[i] = "\<";
-		}
-		else if (strcmp($password[i], ">")) {
-			$password[i] = "\>";
-		}
-		else if (strcmp($password[i], '"')) {
-			$password[i] = "\"";
-		}
-		else if (strcmp($password[i], "'")) {
-			$password[i] = "\'";
-	}
-	return $password;
+function charEscape($text)
+{
+    
 }
 ?>
 
@@ -27,8 +12,8 @@ function charEscape($password) {
 		<title>Liste des utilisateurs</title>
 	</head>
 	<body>
-	<?php 
-	$password = "&opo><"
-	echo charEscape($password); ?>
+	<?php
+	$text = "&opo><'/";
+	echo charEscape($text); ?>
 	</body>
 </html>

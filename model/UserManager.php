@@ -13,16 +13,16 @@ class UserManager extends Manager
         $this->db = $this->dbConnect();
     }
 
-    public function setUser($user,$password)
+    public function setUser($name,$first_name,$adress,$mail,$access_code,$password)
     {
         $req = $this->db->prepare('UPDATE user SET password = :password, name = :name, first_name = :first_name, adress = :adress, mail = :mail WHERE access_code = :access_code');
         $req->execute(array(
       'password' => $password,
-      'name'  => $user['name'],
-      'first_name' => $user['first_name'],
-      'adress' => $user['adress'],
-      'mail' => $user['mail'],
-      'access_code' => $user['access_code']
+      'name'  => $name,
+      'first_name' => $first_name,
+      'adress' => $adress,
+      'mail' => $mail,
+      'access_code' => $access_code
     ));
 
         echo "Inscription validée";
