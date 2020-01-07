@@ -96,7 +96,7 @@
   <section id="formulaire">
     <div class="colonne">
       <h1 class="formulaire">Formulaire de contact</h1>
-      <form class="" action="index_controll.php" method="post">
+      <form class="" action="index_control.php" method="post">
         <p><input type="text" name="nom" value="" placeholder="Votre nom" required></p>
         <p><textarea name="message" rows="8" cols="80" placeholder="Votre message" required></textarea> </p>
         <input id="envoyer" type="submit" name="Envoyer" value="Envoyer">
