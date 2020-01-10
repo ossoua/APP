@@ -9,28 +9,9 @@
 
 </head>
 <body>
-  <header>
-    <div id="logo">
-    <img src="/view/img/logo_produit.png" alt="Logo Produit" width="100px">
-      <img class="padding_menu" src="/view/img/DrivingAces.png" alt="DrivingAces" width="230px">
-    </div>
 
+<?php require './view/header_user.php'?>
 
-    <div id="searchbar">
-      <input type="search" placeholder="Rechercher sur le site..."/>
-    </div>
-    
-    <div class="help">
-      <a href="FAQ.html"><img src="/view/img/help.png" alt="Help" width="25px" title="Besoin d'aide ? FAQ"></a>
-    </div>
-
-
-    <div id="profil">
-        <a href="/user/logout">Déconnexion</a>
-        <a href="Profil.html"><img class="padding_menu" src="/view/img/account.png" alt="icone_user" width="35px"> </a>
-    </div>
-
-  </header>
   <section>
     <p> Imprimer mes résultats <img src="/view/img/print.png" alt="Print" width="20px" title="Imprimer"> </p>
 
