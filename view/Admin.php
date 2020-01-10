@@ -8,23 +8,8 @@
 
   </head>
   <body>
-    <header>
-      <div id="logo" >
-        <img src="/view/img/DrivingAces.png" alt="DrivingAces" width="200">
-      </div>
-
-      <div id="searchbar">
-        <input type="search" placeholder="Rechercher sur le site..."/>
-      </div>
-
-      <div id="help">
-        <a href="FAQ.html"><img src="/view/img/help.png" alt="help" width="25px" title="Besoin d'aide ? FAQ"></a>
-      </div>
-
-      <div id=profil>
-        <img src="/view/img/account.png" alt="profil">
-      </div>
-    </header>
+    
+<?php require './view/header_user.php'?>
 
     <h1>Devenir Administrateur</h1>
 

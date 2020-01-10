@@ -3,11 +3,11 @@ $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
     case '/':
-        require __DIR__ . '/view/indexView.php';
+        require __DIR__ . '/controller/index_control.php';
         break;
 
     case '':
-        require __DIR__ . '/view/indexView.php';
+        require __DIR__ . '/controller/index_control.php';
         break;
 
     case '/user/inscription':

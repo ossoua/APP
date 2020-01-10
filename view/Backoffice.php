@@ -8,25 +8,8 @@
 
 </head>
 <body>
-<header>
-    <div id="logo" >
-        <img src="./view/img/DrivingAces.png" alt="DrivingAces" width="200">
-    </div>
 
-    <div id="searchbar">
-        <input type="search" placeholder="Rechercher sur le site..."/>
-    </div>
-
-    <div id="help">
-        <a href="FAQ.html"><img src="./view/img/help.png" alt="help" width="25px" title="Besoin d'aide ? FAQ"></a>
-    </div>
-
-    <div id=profil>
-        <img src="./view/img/account.png" alt="profil">
-    </div>
-
-    </div>
-</header>
+<?php require './view/header_user.php'?>
 
 <section id="recherche">
   <div class="conteneur">
@@ -50,6 +33,26 @@
 
 <section id="CGU">
   
+</section>
+<section>
+    <h1>Générer un code d'accès pour un nouvel utilisateur</h1>
+</section>
+<section>
+    <h1>Tests</h1>
+    <h2>Rechercher un test</h2>
+    <h2>Lancer un test</h2>
+    <form action="">
+        <input type="text" name="access_code">
+        <input type="checkbox" name="type">
+    </form>
+</section>
+<section>
+    <h1>FAQ</h1>
+    <h2>Modifier la FAQ</h2>
+</section>
+<section>
+    <h1>CGU</h1>
+    <h2>Modifier les CGU</h2>
 </section>
 
 <script src="./controller/backoffice/autocompletion.js"></script>
