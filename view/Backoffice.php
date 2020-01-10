@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>BackOffice</title>
     <link rel="stylesheet" href="/view/stylesheets/style_header.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_backoffice.css">
 
 </head>
 <body>
@@ -27,19 +28,30 @@
     </div>
 </header>
 
-<section>
+<section id="recherche">
+  <div class="conteneur">
     <h1>Rechercher un utilisateur</h1>
 
 
-    <input id="search" type="text" autocomplete="off" />
+    <input style="text-align:center;" id="search" type="text" autocomplete="off" />
 
     <div id="results">
         <p><strong>Utilisateurs trouvés:</strong></p>
     </div>
 
+  </div>
+
+
+</section>
+
+<section id="données">
+
+</section>
+
+<section id="CGU">
+  
 </section>
 
 <script src="./controller/backoffice/autocompletion.js"></script>
 </body>
 </html>
-
