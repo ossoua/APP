@@ -38,6 +38,26 @@
     </div>
 
 </section>
+<section>
+    <h1>Générer un code d'accès pour un nouvel utilisateur</h1>
+</section>
+<section>
+    <h1>Tests</h1>
+    <h2>Rechercher un test</h2>
+    <h2>Lancer un test</h2>
+    <form action="">
+        <input type="text" name="access_code">
+        <input type="checkbox" name="type">
+    </form>
+</section>
+<section>
+    <h1>FAQ</h1>
+    <h2>Modifier la FAQ</h2>
+</section>
+<section>
+    <h1>CGU</h1>
+    <h2>Modifier les CGU</h2>
+</section>
 
 <script src="./controller/backoffice/autocompletion.js"></script>
 </body>
