@@ -11,49 +11,42 @@
 
 <?php require './view/header_user.php'?>
 
-<section id="recherche">
-  <div class="conteneur">
-    <h1>Rechercher un utilisateur</h1>
+  <section id="section1">
+    <div class="conteneur">
+      <h1>Rechercher un utilisateur</h1>
 
 
-    <input style="text-align:center;" id="search" type="text" autocomplete="off" />
+      <input style="text-align:center;" id="search" type="text" autocomplete="off" />
 
-    <div id="results">
-        <p><strong>Utilisateurs trouvés:</strong></p>
+      <div id="results">
+          <p><strong>Utilisateurs trouvés:</strong></p>
+      </div>
+
     </div>
 
-  </div>
 
+  </section>
 
-</section>
-
-<section id="données">
-
-</section>
-
-<section id="CGU">
-  
-</section>
-<section>
-    <h1>Générer un code d'accès pour un nouvel utilisateur</h1>
-</section>
-<section>
-    <h1>Tests</h1>
-    <h2>Rechercher un test</h2>
-    <h2>Lancer un test</h2>
-    <form action="">
-        <input type="text" name="access_code">
-        <input type="checkbox" name="type">
-    </form>
-</section>
-<section>
-    <h1>FAQ</h1>
-    <h2>Modifier la FAQ</h2>
-</section>
-<section>
-    <h1>CGU</h1>
-    <h2>Modifier les CGU</h2>
-</section>
+  <section>
+      <h1>Générer un code d'accès pour un nouvel utilisateur</h1>
+  </section>
+  <section id="section2">
+      <h1>Tests</h1>
+      <h2>Rechercher un test</h2>
+      <h2>Lancer un test</h2>
+      <form action="">
+          <input type="text" name="access_code">
+          <input type="checkbox" name="type">
+      </form>
+  </section>
+  <section id="section3">
+      <h1>FAQ</h1>
+      <h2>Modifier la FAQ</h2>
+  </section>
+  <section id="CGU">
+      <h1>CGU</h1>
+      <h2>Modifier les CGU</h2>
+  </section>
 
 <script src="./controller/backoffice/autocompletion.js"></script>
 </body>
