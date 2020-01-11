@@ -31,7 +31,11 @@
 }
 
 /* Change color of dropdown links on hover */
-.profil_content a:hover {background-color: rgba(0, 986, 0, 0.3) ;}
+.profil_content a:hover {background-color: #ccc ;}
 
 /* Show the dropdown menu on hover */
 .profil_admin:hover .profil_content {display: block;}
+
+strong {
+  color: #00E986;
+}

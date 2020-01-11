@@ -10,7 +10,7 @@
   </div>
 
   <div class="profil_admin">
-      <strong>Espace Admin</strong><button class="profil_btn"><img src="/view/img/account_admin.png" width="35px"></button>
+      <strong>Admin</strong><button class="profil_btn"><img src="/view/img/account_admin.png" width="35px"></button>
       <div class="profil_content">
         <a href="#section1">Mon espace</a>
         <a href="#">Link 2</a>
