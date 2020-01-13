@@ -18,7 +18,9 @@ else if($_SESSION['admin']==1){
 
 
 function newConnection(){
+    require 'model/UserManager.php';
     require 'view/Connection.php';
+
 
     if(isset($_POST['mail']) && isset($_POST['password'])){
 
