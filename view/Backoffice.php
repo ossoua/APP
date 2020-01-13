@@ -5,13 +5,13 @@
     <title>BackOffice</title>
     <link rel="stylesheet" href="/view/stylesheets/style_header.css">
     <link rel="stylesheet" href="/view/stylesheets/style_back.css">
-    <link rel="stylesheet" href="/view/stylesheets/style_header_admin.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_header_admin_user.css">
 
 </head>
 <body>
 
 <?php require './view/header_admin.php'?>
-<a href="/user/logout" style="float: right">Déconnexion</a>
+
 
   </div>
   <section id="section1">
@@ -31,15 +31,11 @@
 
       <div id="results">
         <table>
-          <caption><strong>Utilisateurs trouvés:</strong></caption>
-          <tr>
-            <th width="250px">Utilisateurs</th>
-            <th colspan="2" width="250px">Modification</th>
-          </tr>
+          <caption>Utilisateurs trouvés:</caption>
           <tr>
             <td width="250px">ex:Yassine Alitou</td>
-            <td width="125px"><img src="./view/img/mode_edit.png" alt="edit" width=15px> modifier</td>
-            <td width="125px"><img src="./view/img/delete.png" alt="supprimer" width=15px>supprimer</td>
+            <td width="250px"><button class="edit_btn"><img src="./view/img/mode_edit.png" alt="edit" width=15px>modifier</button>
+            <button class="edit_btn"><img src="./view/img/delete.png" alt="supprimer" width=15px>supprimer</button></td>
           </tr>
         </table>
 
