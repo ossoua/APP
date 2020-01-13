@@ -11,6 +11,7 @@
 <body>
 
 <?php require './view/header_admin.php'?>
+<a href="/user/logout" style="float: right">Déconnexion</a>
 
   </div>
   <section id="section1">

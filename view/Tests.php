@@ -11,6 +11,7 @@
 <body>
 
 <?php require './view/header_user.php'?>
+<a href="/user/logout" style="float: right">Déconnexion</a>
 
   <section>
     <p> Imprimer mes résultats <img src="/view/img/print.png" alt="Print" width="20px" title="Imprimer"> </p>
@@ -23,7 +24,7 @@
         <th width="600px">Résultats</th>
         <th width="150px">Date</th>
       </tr>
-      <?= $test->display_test(); ?>
+      <?= $test->display_test($data); ?>
 
     </table>
     <p>

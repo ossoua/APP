@@ -59,3 +59,8 @@ footer {
   box-shadow:0px -2px 2px #C0C0C0;
   font-size: 13px;
 }
+
+.right{
+  display: flex;
+  justify-content: right;
+}

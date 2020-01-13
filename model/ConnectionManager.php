@@ -5,7 +5,7 @@ require_once 'model/Manager.php';
 
 class ConnectionManager extends Manager
 {
-    protected $id,$mail, $password;
+    protected $id,$mail, $password, $admin;
 
     public function __construct($mail,$password)
     {
@@ -13,9 +13,12 @@ class ConnectionManager extends Manager
             $this->mail = $mail;
             $this->password = $password;
             $db = $this->dbConnect();
-            $req_id = $db->prepare('SELECT id_user FROM user WHERE mail = :mail');
+            $req_id = $db->prepare('SELECT id_user,admin FROM user WHERE mail = :mail');
             $req_id->execute(array(':mail' => $mail));
-            $this->id = $req_id->fetch();
+            $data = $req_id->fetch();
+            $this->id = $data['id_user'];
+            $this->admin = $data['admin'];
+
         }
         else{
             throw new Exception( "Identifiants incorrects" );
@@ -45,6 +48,17 @@ class ConnectionManager extends Manager
     {
         return $this->password;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getAdmin()
+    {
+        return $this->admin;
+    }
+
+
+
 
 
 

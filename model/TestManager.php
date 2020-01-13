@@ -20,8 +20,7 @@ class TestManager extends Manager
     {
         try{
             $req = $this->db->prepare('SELECT * FROM data WHERE id_user = :id_user');
-            $req->execute(array(':id_user' => $id_user['id_user']));
-
+            $req->execute(array(':id_user' => $id_user));
             return $req;
         }
         catch (PDOException $e){
@@ -29,20 +28,15 @@ class TestManager extends Manager
         }
     }
 
-    public function display_test()
+    public function display_test($data)
     {
-        if (isset($_SESSION['id_user'])){
-            $test = new TestManager();
-            $data = $test->getData($_SESSION['id_user']);
-            foreach ($data as $row) {
-                echo '<tr>
-                    <td>'.$row['id_user'].'</td>
-                    <td>'.$row['nom'].'</td>
-                    <td>'.$row['value'].'</td>
-                    <td>'.$row['date'].'</td>
+        foreach ($data as $row) {
+            echo '<tr>
+                  <td>'.$row['id_user'].'</td>
+                  <td>'.$row['nom'].'</td>
+                  <td>'.$row['value'].'</td>
+                  <td>'.$row['date'].'</td>
                   </tr>';
-
-            }
         }
     }
 }

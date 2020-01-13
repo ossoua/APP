@@ -19,10 +19,11 @@ class BackofficeManager extends Manager
     /**
      * @return mixed
      */
-    public function getData()
+
+    /*public function getData()
     {
         return $this->data;
-    }
+    }*/
 
     function getUsers()
     {
