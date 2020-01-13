@@ -22,8 +22,12 @@ function newConnection(){
 
     if(isset($_POST['mail']) && isset($_POST['password'])){
 
+      $user = new UserManager();
+      $mail = $user -> charEscape($_POST['mail']);
+      $password = $user -> charEscape($_POST['password']);
+
         try{
-            $connection = new ConnectionManager ($_POST['mail'],$_POST['password']);
+            $connection = new ConnectionManager ($mail,$password);
             $_SESSION['id_user'] = $connection->getId();
             $_SESSION['password'] = $connection->getPassword();
             $_SESSION['mail'] = $connection->getMail();
@@ -39,5 +43,3 @@ function newConnection(){
       }
 
 }
-
-
