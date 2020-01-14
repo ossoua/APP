@@ -5,7 +5,6 @@
     <title>BackOffice</title>
     <link rel="stylesheet" href="/view/stylesheets/style_header.css">
     <link rel="stylesheet" href="/view/stylesheets/style_back.css">
-    <link rel="stylesheet" href="/view/stylesheets/style_header_admin_user.css">
 
 </head>
 <body>
