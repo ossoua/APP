@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <title>Mes tests</title>
-  <link rel="stylesheet" href="/view/stylesheets/style_header.css">
-  <link rel="stylesheet" href="/view/stylesheets/style_accueil.css">
-  <link rel="stylesheet" href="/view/stylesheets/style_test.css">
+    <meta charset="utf-8">
+    <title>Mes tests</title>
+    <link rel="stylesheet" href="/view/stylesheets/style_header.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_accueil.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_test.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        //Chargement de l'API de visualisation
+        google.charts.load('current', {'packages':['corechart']});
 
+        //Run quand l'API est appelée
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var jsonData = $.ajax({
+                url: "getData.php",
+                dataType: "json",
+                async: false
+            }).responseText;
+
+            // Creation de la var data à partir du fichier json
+            var data = new google.visualization.DataTable(jsonData);
+            //Dessin du graphique
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, {width: 400, height: 240});
+        }
+    </script>
 </head>
 <body>
 
@@ -25,12 +47,13 @@
         <th width="150px">Date</th>
       </tr>
       <?= $test->display_test($data); ?>
-
     </table>
-    <p>
-      <font style="float:right">Afficher mes données sous formes de graphiques</font>
-      <font style="float:left">Afficher les statistiques des tests</font>
-    </p>
+      <div class="wraper">
+          <p>Afficher mes données sous formes de graphiques</p>
+          <p>Afficher les statistiques des tests</p>
+      </div>
+
+
 
   </section>
   <footer>
