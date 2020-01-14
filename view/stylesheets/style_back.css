@@ -68,3 +68,7 @@ td {
 table, caption {
   margin-bottom: 20px;
 }
+
+button {
+    background-color: #1C96E8;
+}
