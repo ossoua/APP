@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="stylesheets/style_header.css">
   <link rel="stylesheet" href="stylesheets/style_accueil.css">
   <link rel="stylesheet" href="stylesheets/style_profil.css">
-  <link rel="stylesheet" href="stylesheets/style_header_admin_user.css">
+  
 
 
 </head>
