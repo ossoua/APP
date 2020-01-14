@@ -57,8 +57,8 @@
     </div>
 
     <div class="conteneur">
-      <h1>Lancer un testjiefhe zh</h1>
-      <button type="button" name="test">Lancement du test</button>
+      <h1>Lancer un test</h1>
+      <a href="/view/AdminTest.php"><button type="button" name="test">Lancement du test</button></a>
     </div>
 
 
