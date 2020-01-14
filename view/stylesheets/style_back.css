@@ -7,6 +7,7 @@ section{
   width: 300px;
   height: 525px;
   background-color: #eee;
+  position: absolute;
 }
 
 .menu a {
@@ -32,6 +33,7 @@ section{
   margin-left: 20%;
   margin-right: 20%;
 }
+
 h1  {
   text-align: center;
   padding: 10px;
@@ -65,4 +67,8 @@ td {
 }
 table, caption {
   margin-bottom: 20px;
+}
+
+button {
+    background-color: #1C96E8;
 }

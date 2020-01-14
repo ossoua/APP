@@ -56,13 +56,12 @@
       <a href="#section4">Modifier les conditions générales de l'utilisateur <img src="./view/img/settings.png" alt="settings" width=20px></a>
     </div>
 
-    <h1>Tests</h1>
-    <h2>Rechercher un test</h2>
-    <h2>Lancer un test</h2>
-    <form action="">
-        <input type="text" name="access_code">
-        <input type="checkbox" name="type">
-    </form>
+    <div class="conteneur">
+      <h1>Lancer un test</h1>
+      <a href="/view/AdminTest.php"><button type="button" name="test">Lancement du test</button></a>
+    </div>
+
+
   </section>
 
   <section id="section3">
