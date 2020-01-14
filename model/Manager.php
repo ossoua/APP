@@ -61,4 +61,3 @@ abstract class Manager
         return $textEncode;
     }
 }
-
