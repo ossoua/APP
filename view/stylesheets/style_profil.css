@@ -4,14 +4,7 @@ html {
 section{
   padding-top: 30px;
 }
-input[type =search]{
-  padding: 5px 10px 5px 10px;
-  border:1px solid #1C96E8;
-  border-radius:100px;
-  width:180%;
-  box-shadow:1px 1px 2px #C0C0C0 inset;
-  outline-style: none;
-}
+
 h3 {
   margin: 10px;
 }
