@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <?php require './view/header_admin.php'?>
+  
 
 </body>
 </html>
