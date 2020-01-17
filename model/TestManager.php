@@ -28,15 +28,30 @@ class TestManager extends Manager
         }
     }
 
+
     public function display_test($data)
     {
         foreach ($data as $row) {
             echo '<tr>
                   <td>'.$row['id_user'].'</td>
                   <td>'.$row['nom'].'</td>
-                  <td>'.$row['value'].'</td>
-                  <td>'.$row['date'].'</td>
+                  <td id="value">'.$row['value'].'</td>
+                  <td id="date">'.$row['date'].'</td>
                   </tr>';
+        }
+    }
+
+    public function getJson($id_user)
+    {
+        $json = array();
+        try{
+            $req = $this->db->prepare('SELECT value,date FROM data WHERE id_user = :id_user');
+            $req->execute(array(':id_user' => $id_user));
+            $json = $req -> fetchAll();
+            return $json;
+        }
+        catch (PDOException $e){
+            print $e->getMessage();
         }
     }
 }

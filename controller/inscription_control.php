@@ -6,7 +6,7 @@ if (!isset($_SESSION['error'])){
     $_SESSION['error'] = "";
 }
 
-if (isset($_POST['password']) && isset($_POST['name']) && isset($_POST['first_name']) && isset($_POST['adress']) && isset($_POST['mail']) && isset($_POST['password_check']) && isset($_POST['access_code'])) {
+if ($_POST['password']!="" && $_POST['name']!="" && $_POST['first_name']!="" && $_POST['adress']!="" && $_POST['mail']!="" && $_POST['password_check']!="" && $_POST['access_code']!="") {
     require_once 'model/UserManager.php';
     require 'view/Inscription.php';
 

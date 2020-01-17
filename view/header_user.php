@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="stylesheets/style_profil.css">
+<link rel="stylesheet" href="./view/stylesheets/style_profil.css">
 <header>
     <div id="logo">
         <img src="/view/img/logo_produit.png" alt="Logo Produit" width="100px">
