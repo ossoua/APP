@@ -20,26 +20,20 @@
             var data = new google.visualization.DataTable();
             var table = document.getElementById('tests');
 
-            data.addColumn('number', 'Date');
+            data.addColumn('date', 'Date');
             data.addColumn('number', 'Température');
 
+            var xaxis = document.getElementsByClassName('date');
+            var yaxis = document.getElementsByClassName('value');
+            console.log(xaxis[0].innerHTML);
+            console.log(yaxis);
 
-            data.addRows(1);
-            var tr = table.getElementsByTagName('tr');
-            console.log(tr);
+            data.addRows(xaxis.length);
 
-            for (var i = 0, cell; cell = tr.length; i++){
+            for (var i = 1; i<xaxis.length; i++){
                 //On récupère les données du tableau (Date en abcisse et température en ordonnée)
-                var xaxis = document.getElementById('date');
-                xaxis = Date.parse(xaxis);
-                console.log(xaxis);
-                //var xaxis = new Date(parseInt(td.eq(3).text().slice(0,4)),parseInt(td.eq(3).text().slice(5,7)),parseInt(td.eq(3).text().slice(8,10)));
-                var yaxis = document.getElementById('value');
-                console.log(yaxis);
-            //.replace(',', '.')
-
-                data.setCell(i, 0, xaxis);
-                data.setCell(i, 1, yaxis);
+                data.setCell(i-1, 0, new Date(Date.parse(xaxis[i].innerHTML)));
+                data.setCell(i-1, 1, Number(yaxis[i].innerHTML.replace(/,/g, '.')));
             }
 
 

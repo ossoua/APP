@@ -35,8 +35,8 @@ class TestManager extends Manager
             echo '<tr>
                   <td>'.$row['id_user'].'</td>
                   <td>'.$row['nom'].'</td>
-                  <td id="value">'.$row['value'].'</td>
-                  <td id="date">'.$row['date'].'</td>
+                  <td class="value">'.$row['value'].'</td>
+                  <td class="date">'.$row['date'].'</td>
                   </tr>';
         }
     }
