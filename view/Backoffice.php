@@ -36,49 +36,56 @@
 </section>
 
 <section id="section2">
-    <div class="menu">
-        <a href="#section1">Gérer les utilisateurs <img src="./view/img/users.png" alt="users" width=20px></a>
-        <a href="#section2" class="active">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
-        <a href="#section3">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
-        <a href="#section4">Modifier les conditions générales de l'utilisateur <img src="./view/img/settings.png"
-                                                                                    alt="settings" width=20px></a>
-    </div>
+    <?php require './view/header_admin.php' ?>
+    <div class="wraper">
+        <div class="menu">
+            <a href="#section1">Gérer les utilisateurs <img src="./view/img/users.png" alt="users" width=20px></a>
+            <a href="#section2" class="active">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
+            <a href="#section3">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
+            <a href="#section4">Modifier les conditions générales de l'utilisateur <img src="./view/img/settings.png"
+                                                                                        alt="settings" width=20px></a>
+        </div>
 
-    <div class="conteneur">
-        <h1>Lancer un test</h1>
-        <a href="/view/AdminTest.php">
-            <button type="button" name="test">Lancement du test</button>
-        </a>
+        <div class="conteneur">
+            <h1>Lancer un test</h1>
+            <a href="/view/AdminTest.php">
+                <button type="button" name="test">Lancement du test</button>
+            </a>
+        </div>
     </div>
-
 
 </section>
 
 <section id="section3">
-    <div class="menu">
-        <a href="#section1">Gérer les utilisateurs <img src="./view/img/users.png" alt="users" width=20px></a>
-        <a href="#section2">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
-        <a href="#section3" class="active">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
-        <a href="#section4">Modifier les conditions générales de l'utilisateur <img src="./view/img/settings.png"
-                                                                                    alt="settings" width=20px></a>
-    </div>
+    <?php require './view/header_admin.php' ?>
+    <div class="wraper">
+        <div class="menu">
+            <a href="#section1">Gérer les utilisateurs <img src="./view/img/users.png" alt="users" width=20px></a>
+            <a href="#section2">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
+            <a href="#section3" class="active">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
+            <a href="#section4">Modifier les conditions générales de l'utilisateur <img src="./view/img/settings.png"
+                                                                                        alt="settings" width=20px></a>
+        </div>
 
-    <h1>FAQ</h1>
-    <h2>Modifier la FAQ</h2>
+        <h1>FAQ</h1>
+        <h2>Modifier la FAQ</h2>
+    </div>
 </section>
 
 <section id="section4">
+    <?php require './view/header_admin.php' ?>
+    <div class="wraper">
+        <div class="menu">
+            <a href="#section1">Gérer les utilisateurs <img src="./view/img/users.png" alt="users" width=20px></a>
+            <a href="#section2">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
+            <a href="#section3">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
+            <a href="#section4" class="active">Modifier les conditions générales de l'utilisateur <img
+                        src="./view/img/settings.png" alt="settings" width=20px></a>
+        </div>
 
-    <div class="menu">
-        <a href="#section1">Gérer les utilisateurs <img src="./view/img/users.png" alt="users" width=20px></a>
-        <a href="#section2">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
-        <a href="#section3">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
-        <a href="#section4" class="active">Modifier les conditions générales de l'utilisateur <img
-                    src="./view/img/settings.png" alt="settings" width=20px></a>
+        <h1>CGU</h1>
+        <h2>Modifier les CGU</h2>
     </div>
-
-    <h1>CGU</h1>
-    <h2>Modifier les CGU</h2>
 </section>
 
 <script src="./controller/backoffice/autocompletion.js"></script>

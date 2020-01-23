@@ -14,7 +14,7 @@ section{
   width: 300px;
   height: 100vh;
   background-color: #eee;
-  position: absolute;
+  position: fixed;
 }
 
 .menu a {
@@ -34,11 +34,13 @@ section{
   background-color: #1C96E8;
   color: white;
 }
+
 .conteneur {
   margin-top: 20px;
   margin-left: 40%;
   margin-right: 20%;
   width: 500px;
+  justify-content: center;
 }
 
 h1  {

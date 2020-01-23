@@ -60,7 +60,7 @@ function displayResults(response){
             user.innerHTML = response[i];
             action.innerHTML = " <button class=\"edit_btn\"><img src=\"./view/img/mode_edit.png\" alt=\"edit\" width=15px>modifier </button> <button class=\"edit_btn\"><img src=\"./view/img/delete.png\" alt=\"supprimer\" width=15px>supprimer </button> " ;
 
-            
+
         }
     }
 }
