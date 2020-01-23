@@ -26,25 +26,11 @@
             <h1>Rechercher un utilisateur</h1>
 
 
-            <input style="text-align:center;" id="search" type="text" autocomplete="off"/>
+            <input style="text-align:center" id="search" type="text" autocomplete="off"/>
 
             <div id="results">
-                <table>
-                    <caption>Utilisateurs trouvés:</caption>
-                    <tr>
-                        <td width="250px"></td>
-                        <td width="250px">
-                            <button class="edit_btn"><img src="./view/img/mode_edit.png" alt="edit" width=15px>modifier
-                            </button>
-                            <button class="edit_btn"><img src="./view/img/delete.png" alt="supprimer" width=15px>supprimer
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-
             </div>
-
-            Générer un code d'accès pour un nouvel utilisateur
+            <p>Générer un code d'accès pour un nouvel utilisateur</p>
         </div>
     </div>
 </section>

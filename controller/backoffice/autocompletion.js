@@ -45,14 +45,22 @@ function displayResults(response){
         results.innerHTML=''; //on vide les anciens résultats
 
         for (var i=0;i < responseLength;i++){
-            var div;
+            var row;
+            var user;
+            var action;
 
-            div = results.appendChild(document.createElement('div'));
-            div.innerHTML = response[i];
+            action = document.createElement("td");
+            action.style.width = "250px";
 
-            div.addEventListener('click',function (e) {
-                chooseResult(e.target);
-            })
+            row = results.appendChild(document.createElement("tr"));
+            user = document.createElement("td");
+            user.style.width = "250px";
+            row.appendChild(user);
+            row.appendChild(action);
+            user.innerHTML = response[i];
+            action.innerHTML = " <button class=\"edit_btn\"><img src=\"./view/img/mode_edit.png\" alt=\"edit\" width=15px>modifier </button> <button class=\"edit_btn\"><img src=\"./view/img/delete.png\" alt=\"supprimer\" width=15px>supprimer </button> " ;
+
+            
         }
     }
 }
@@ -66,7 +74,7 @@ function chooseResult(result){
 }
 
 searchElement.addEventListener('keyup', function (e) {
-    var divs = results.getElementsByTagName('div');
+    var divs = results.getElementsByTagName('td');
 
     if (e.key == 38 && selectedResult > -1){ //38 represente la fleche du haut
         divs[selectedResult--].className='';
