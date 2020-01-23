@@ -9,9 +9,9 @@
         <ul>
             <li><a href="/">Accueil</a></li>
             <img src="/view/img/Ligne 1.png" alt="ligne">
-            <li><a href="/#link_presentation">Découvrir DrivingAces®</a></li>
+            <li><a href="/#presentation">Découvrir DrivingAces®</a></li>
             <img src="/view/img/Ligne 1.png" alt="ligne">
-            <li><a href="/#link_formulaire">Nous rejoindre</a></li>
+            <li><a href="/#formulaire">Nous rejoindre</a></li>
             <img src="/view/img/Ligne 1.png" alt="ligne">
             <li><a href="/FAQ">FAQ</a></li>
         </ul>

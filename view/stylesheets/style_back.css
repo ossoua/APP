@@ -1,7 +1,14 @@
-
+body{
+  height: 100%;
+  margin: 0%;
+  overflow: hidden;
+}
 section{
-  display: flex;
   justify-content: space-between;
+  height: 100vh;
+}
+.wraper{
+  display: flex;
 }
 .menu {
   width: 300px;
@@ -28,9 +35,8 @@ section{
   color: white;
 }
 .conteneur {
-  display: block;
   margin-top: 20px;
-  margin-left: 20%;
+  margin-left: 40%;
   margin-right: 20%;
 }
 

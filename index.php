@@ -2,11 +2,8 @@
 $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
-    case '/':
-        require __DIR__ . '/controller/index_control.php';
-        break;
-
     case '':
+    case '/':
         require __DIR__ . '/controller/index_control.php';
         break;
 
@@ -19,7 +16,7 @@ switch ($request) {
         break;
 
     case '/user/profile':
-        require __DIR__ . '/view/Profil.html';
+        require __DIR__ . '/view/Profil.php';
         break;
 
     case '/user/logout':
@@ -34,6 +31,7 @@ switch ($request) {
         require __DIR__ .'/view/FAQ2.php';
         break;
 
+    case '/user/askAdmin':
     case '/administration':
         require __DIR__ .'/controller/admin_control.php';
         break;
@@ -42,12 +40,8 @@ switch ($request) {
         require __DIR__ . '/controller/backoffice/backoffice_controller.php';
         break;
 
-    case '/user/askAdmin':
-        require __DIR__ . '/controller/admin_control.php';
-        break;
 
-
-  default:
+    default:
     http_response_code(404);
     require __DIR__ . '/404.php';
     break;
