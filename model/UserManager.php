@@ -52,7 +52,7 @@ class UserManager extends Manager
         echo "Inscription validée";
     }
 
-    function getUsers()
+    public function getUsers()
     {
         $req = $this->db->prepare('SELECT name, first_name, access_code FROM user');
         $req->execute();
@@ -67,7 +67,7 @@ class UserManager extends Manager
         return $this->users;
     }
 
-    function getUserInfo($access_code){
+    public function getUserInfo($access_code){
         $req = $this->db->prepare('SELECT name, first_name, adress, mail, admin FROM user WHERE access_code = :access_code');
         $req->execute(array(
             'access_code' => $access_code
