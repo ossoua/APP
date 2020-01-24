@@ -30,7 +30,17 @@
 
             <div id="results">
             </div>
-            <p>Générer un code d'accès pour un nouvel utilisateur</p>
+            <br>
+
+            <div id="selected">
+            </div>
+            <br>
+
+            <form action="/backoffice" method="post">
+                <input type="hidden" name="ok">
+                <input type="submit" value="Générer un code d'accès pour un nouvel utilisateur">
+            </form>
+
         </div>
     </div>
 </section>
