@@ -72,20 +72,38 @@ function displayResults(response) {
             user.innerHTML = response[i];
             var access_code = parseInt(user.innerHTML.match(/Code d'accès: (\d+)/i)[1]);
             action.innerHTML = " <button class=\"edit_btn\" onclick='getInfo(" + access_code + ")'><img src=\"./view/img/mode_edit.png\" alt=\"edit\" width=15px>modifier</button> " +
-                " <button class=\"edit_btn\"><img src=\"./view/img/delete.png\" alt=\"supprimer\" width=15px>supprimer</button> ";
+                " <button class=\"edit_btn\" onclick='removeUser(" + access_code + ")'><img src=\"./view/img/delete.png\" alt=\"supprimer\" width=15px>supprimer</button> ";
         }
     }
 }
 
-/*
-function chooseResult(result){
-    searchElement.value = previousValue = result.innerHTML;
-    results.style.display = 'none';
-    results.className = '';
-    selectedResult = -1;
-    searchElement.focus();
+function removeUser(access_code){
+    var xmlhttp;
+    if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        if (window.ActiveXObject)
+            try {
+                xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                try {
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e) {
+                    return null;
+                }
+            }
+    }
+
+    xmlhttp.open("GET", "./controller/backoffice/autocompletion.php?access_code=" + access_code +
+        "&remove=true", true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            alert("Utilisateur supprimé");
+        }
+    }
 }
-*/
 
 function getInfo(access_code) {
     var xmlhttp;
@@ -146,4 +164,5 @@ searchElement.addEventListener('keyup', function (e) {
         selectedResult = -1;
         modify.innerHTML = " ";
     }
+
 });

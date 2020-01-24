@@ -33,6 +33,7 @@ class UserManager extends Manager
            'access_code' => $access_code
         ));
 
+        setcookie('newcode',$access_code);
         echo 'Nouveau code généré';
     }
 
@@ -119,4 +120,19 @@ class UserManager extends Manager
             'access_code' => $access_code
         ));
     }
+
+    public function getFreeCodes(){
+        $req = $this->db->prepare("SELECT access_code FROM user WHERE name = '' ");
+        $req->execute();
+        return $req;
+    }
+
+    public function removeUser($access_code){
+        $req = $this->db->prepare('DELETE FROM user WHERE access_code = :access_code');
+        $req->execute(array(
+            'access_code' => $access_code
+        ));
+    }
 }
+
+

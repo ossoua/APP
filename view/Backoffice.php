@@ -36,11 +36,31 @@
             </div>
             <br>
 
+            <table id="codes">
+                <caption> Codes d'accès disponibles </caption>
+                <thead>
+                <tr>
+                    <th width="250px">Code d'accès</th>
+                    <th width="250px">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?= displayCodes($codes) ?>
+                </tbody>
+            </table>
+
             <form action="/backoffice" method="post">
                 <input type="hidden" name="ok">
                 <input type="submit" value="Générer un code d'accès pour un nouvel utilisateur">
             </form>
+            <br>
 
+            <?php
+                if (isset($_COOKIE['newcode']) && $_COOKIE['newcode'] != ""){
+                    echo "Nouvel utilisateur créé: " . $_COOKIE['newcode'] . ". Veuillez transmettre ce code au destinataire afin de permettre la création de son profil.";
+                    setcookie('newcode',"");
+                }
+            ?>
         </div>
     </div>
 </section>

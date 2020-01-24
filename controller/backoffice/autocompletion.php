@@ -21,7 +21,13 @@ if (isset($_GET['search'])) {
     echo implode('|', $selected_users);
 }
 
-if (isset($_GET['access_code'])){
+if (isset($_GET['access_code'])) {
+    if ($_GET['remove'] == "true") {
+        $back_office->removeUser($_GET['access_code']);
+        header('Location: /backoffice');
+    } else {
     $user = $back_office->getUserInfo($_GET['access_code']);
-    echo implode('|',$user);
+    echo implode('|', $user);
+    }
+    header('Location: /backoffice');
 }
