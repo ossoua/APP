@@ -22,11 +22,19 @@ if (isset($_GET['search'])) {
 }
 
 if (isset($_GET['access_code'])) {
+<<<<<<< HEAD
     if (isset($_GET['remove']) && $_GET['remove'] == "true") {
+=======
+    if ($_GET['remove'] == "true") {
+>>>>>>> parent of 3359ed3... Revert "Merge branch 'master' of https://github.com/ossoua/APP"
         $back_office->removeUser($_GET['access_code']);
         header('Location: /backoffice');
     } else {
     $user = $back_office->getUserInfo($_GET['access_code']);
     echo implode('|', $user);
     }
+<<<<<<< HEAD
+=======
+    header('Location: /backoffice');
+>>>>>>> parent of 3359ed3... Revert "Merge branch 'master' of https://github.com/ossoua/APP"
 }
