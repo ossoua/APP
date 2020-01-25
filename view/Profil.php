@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Mon profil</title>
-  <link rel="stylesheet" href="stylesheets/style_header.css">
-  <link rel="stylesheet" href="stylesheets/style_accueil.css">
-  <link rel="stylesheet" href="stylesheets/style_profil.css">
+  <link rel="stylesheet" href="/view/stylesheets/style_header.css">
+  <link rel="stylesheet" href="/view/stylesheets/style_accueil.css">
+  <link rel="stylesheet" href="/view/stylesheets/style_profil.css">
   
 
 

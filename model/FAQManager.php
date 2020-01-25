@@ -34,11 +34,30 @@ class FAQManager extends Manager
         return $answer;
     }
 
+    public function getId(){
+        $req = $this->db->prepare('SELECT id_question FROM FAQ');
+        $req->execute();
+
+        $id = array();
+        foreach ($req as $row){
+            array_push($id,$row['id_question']);
+        }
+
+        return $id;
+    }
+
     public function newFaq($question,$reponse){
         $new = $this->db->prepare("INSERT INTO FAQ (id_question, question, date, answer) VALUES (NULL, :question, CURRENT_DATE(), :reponse)");
         $new->execute(array(
             'question' => $question,
             'reponse' => $reponse
+        ));
+    }
+
+    public function removeFaq($id){
+        $remove = $this->db->prepare("DELETE FROM FAQ WHERE id_question = :id");
+        $remove->execute(array(
+            'id' => $id
         ));
     }
 }

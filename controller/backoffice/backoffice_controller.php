@@ -8,23 +8,30 @@ $faq = new FAQManager();
 $codes = $user->getFreeCodes();
 $faqQuestions = $faq->getQuestions();
 $faqRep = $faq->getRep();
+$faqId = $faq->getId();
 
 function displayCodes($data)
 {
     foreach ($data as $code) {
         echo '<tr>
-                <td>'. $code['access_code'] .'</td>
-                <td>'. "Aucune action disponible" .'</td>
+                <td>' . $code['access_code'] . '</td>
+                <td>' . "Aucune action disponible" . '</td>
               </tr>';
     }
 }
 
-function displayFAQ($questions,$reponses)
+function displayFAQ($questions, $reponses, $id)
 {
-    for ($i = 0;$i<count($questions);$i++) {
+    for ($i = 0; $i < count($questions); $i++) {
         echo '<tr>
-                <td>'. $questions[$i] .'</td>
-                <td>'. $reponses[$i] .'</td>
+                <td>' . $questions[$i] . '</td>
+                <td>' . $reponses[$i] . '</td>
+                <td>
+                <form action="/backoffice" method="post">
+                    <input type="hidden" name="id" value="' . $id[$i] . '">
+                    <input type="submit" value="Supprimer">
+                </form>
+                </td>
               </tr>';
     }
 }
@@ -55,9 +62,12 @@ if (isset($_POST['name']) && isset($_POST['first_name']) && isset($_POST['adress
     header('Location: /backoffice');
 } else if (isset($_POST['question']) && isset($_POST['reponse'])) {
     if ($_POST['question'] != "" && $_POST['reponse'] != "") {
-        $faq->newFaq($_POST['question'],$_POST['reponse']);
+        $faq->newFaq($_POST['question'], $_POST['reponse']);
         header('Location: /backoffice');
     }
+} else if (isset($_POST['id'])) {
+    $faq->removeFaq($_POST['id']);
+    header('Location: /backoffice');
 } else {
     require_once './view/Backoffice.php';
 }

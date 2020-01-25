@@ -128,10 +128,11 @@
                 <tr>
                     <th width="250px">Questions</th>
                     <th width="250px">Réponses</th>
+                    <th width="250px">Action</th>
                 </tr>
                 </thead>
                 <tbody>
-                <?= displayFAQ($faqQuestions, $faqRep) ?>
+                <?= displayFAQ($faqQuestions, $faqRep, $faqId) ?>
                 </tbody>
             </table>
             <button onclick="modify()">Ajouter une entrée</button>
