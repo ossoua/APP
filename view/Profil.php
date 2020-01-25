@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/view/stylesheets/style_header.css">
   <link rel="stylesheet" href="/view/stylesheets/style_accueil.css">
   <link rel="stylesheet" href="/view/stylesheets/style_profil.css">
-  
+
 
 
 </head>
@@ -16,7 +16,14 @@
 
 
   <section>
-    <h3>Bonjour, [nom prénom]</h3>
+    <div id="photo_profil">
+      <h3>Bonjour, [nom prénom]</h3>
+      <div class="photo">
+        <img src="/view/img/add_photo.png" alt="photo de profil" width="50%">
+      </div>
+
+    </div>
+
     <div id="mon_profil">
 
       <label>Nom</label>

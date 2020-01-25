@@ -79,14 +79,12 @@ footer {
   cursor: pointer;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .profil_admin {
   position: relative;
   display: inline-block;
   margin-right: 10px;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .profil_content {
   display: none;
   position: absolute;
@@ -96,7 +94,6 @@ footer {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .profil_content a {
   color: black;
   padding: 5px 4px;
@@ -104,10 +101,8 @@ footer {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .profil_content a:hover {background-color: #ccc ;}
 
-/* Show the dropdown menu on hover */
 .profil_admin:hover .profil_content {display: block;}
 
 strong {
