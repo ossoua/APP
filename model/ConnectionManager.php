@@ -5,7 +5,7 @@ require_once 'model/Manager.php';
 
 class ConnectionManager extends Manager
 {
-    protected $id,$mail, $password, $admin, $access_code, $name, $first_name;
+    protected $id,$mail, $password, $admin, $access_code, $name, $first_name, $adress;
 
     public function __construct($mail,$password)
     {
@@ -13,7 +13,7 @@ class ConnectionManager extends Manager
             $this->mail = $mail;
             $this->password = $password;
             $db = $this->dbConnect();
-            $req_id = $db->prepare('SELECT id_user,admin, access_code, name, first_name FROM user WHERE mail = :mail');
+            $req_id = $db->prepare('SELECT id_user,admin, access_code, name, first_name, adress FROM user WHERE mail = :mail');
             $req_id->execute(array(':mail' => $mail));
             $data = $req_id->fetch();
             $this->id = $data['id_user'];
@@ -21,6 +21,7 @@ class ConnectionManager extends Manager
             $this->access_code = $data['access_code'];
             $this->first_name = $data['first_name'];
             $this->name = $data['name'];
+            $this->adress = $data['adress'];
 
         }
         else{
@@ -84,14 +85,8 @@ class ConnectionManager extends Manager
         return $this->first_name;
     }
 
-
-
-
-
-
-
-
-
-
-
+    public function getAdress()
+    {
+        return $this->adress;
+    }
 }

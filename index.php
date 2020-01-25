@@ -15,10 +15,6 @@ switch ($request) {
         require __DIR__ . '/controller/connection_control.php';
         break;
 
-    case '/user/profile':
-        require __DIR__ . '/view/Profil.php';
-        break;
-
     case '/user/logout':
         require __DIR__ . '/controller/logout.php';
         break;
@@ -38,6 +34,10 @@ switch ($request) {
 
     case '/backoffice':
         require __DIR__ . '/controller/backoffice/backoffice_controller.php';
+        break;
+
+    case '/user/profil':
+        require __DIR__ . '/controller/profil_control.php';
         break;
 
 

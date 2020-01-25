@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <title>Mon profil</title>
-  <link rel="stylesheet" href="/view/stylesheets/style_header.css">
-  <link rel="stylesheet" href="/view/stylesheets/style_profil.css">
-
+    <meta charset="utf-8">
+    <title>Mon profil</title>
+    <link rel="stylesheet" href="/view/stylesheets/style_header.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_profil.css">
 
 
 </head>
 <body>
 
-<?php require './view/header_user.php'?>
+<?php require './view/header_user.php' ?>
 
 
-  <section>
+<section>
     <div id="photo_profil">
-      <h3>Bonjour, [nom prénom]</h3>
-      <div class="photo">
-        <img src="/view/img/add_photo.png" alt="photo de profil" width="50%">
-      </div>
+        <h3>Bonjour <?= $_SESSION['first_name'] . " " . $_SESSION['name'] ?></h3>
+        <div class="photo">
+            <img src="/view/img/add_photo.png" alt="photo de profil" width="50%">
+        </div>
 
     </div>
 
     <div id="mon_profil">
 
-      <label>Nom</label>
-      <div class="information"><button class="edit_btn"><img src="../view/img/mode_edit.png"></button></div>
+        <label>Nom</label>
+        <br>
+        <form action="/user/profil" method="post" name="name"><input class="information" type="text" value="<?= $_SESSION['name'] ?>">
+            <input type="image" src="../view/img/mode_edit.png" alt="Submit Form"/>
+        </form>
 
-      <label>Prénom</label>
-      <div class="information"><button class="edit_btn"><img src="../view/img/mode_edit.png"></button></div>
+        <br>
+        <label>Prénom</label>
+        <br>
+        <form action="/user/profil" method="post" name="first_name"><input class="information" type="text"
+                                                                           value="<?= $_SESSION['first_name'] ?>">
+            <input type="image" src="../view/img/mode_edit.png" alt="Submit Form"/>
+        </form>
 
-      <label>Adresse postale</label>
-      <div class="information"><button class="edit_btn"><img src="../view/img/mode_edit.png"></button></div>
 
-      <label>Adresse mail</label>
-      <div class="information"><button class="edit_btn"><img src="../view/img/mode_edit.png"></button></div>
+        <br>
+        <label>Adresse postale</label>
+        <br>
+        <form action="/user/profil" method="post" name="adress"><input class="information" type="text"
+                                                                       value="<?= $_SESSION['adress'] ?>">
+            <input type="image" src="../view/img/mode_edit.png" alt="Submit Form"/>
+        </form>
 
-      <label>Mot de passe</label>
-      <div class="information"><button class="edit_btn"><img src="../view/img/mode_edit.png"></button></div>
+        <br>
+        <label>Adresse mail</label>
+        <br>
+        <form action="/user/profil" method="post" name="mail"><input class="information" type="text" value="<?= $_SESSION['mail'] ?>">
+            <input type="image" src="../view/img/mode_edit.png" alt="Submit Form"/>
+        </form>
     </div>
-  </section>
+</section>
 
-  <footer>
+<footer>
     <a href="GCU.html"> Conditions générales d'utilisation & Règles de confidentialités </a>
     Navajo 2019(©)
-  </footer>
+</footer>
 
 </body>
 </html>
