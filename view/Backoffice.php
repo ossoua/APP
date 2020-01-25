@@ -106,7 +106,7 @@
             <p>
                 <a href="/view/AdminTest.php">
                   <div class="lancer">
-                    <input type="submit" name="" value="Lancement du test">
+                    <input type="submit" value="Lancement du test">
                   </div>
                 </a>
             </p>
