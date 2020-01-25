@@ -83,6 +83,7 @@ footer {
   position: relative;
   display: inline-block;
   margin-right: 10px;
+
 }
 
 .profil_content {
@@ -91,7 +92,11 @@ footer {
   background-color: #eee;
   width: 166px;
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+
+}
+.profil_content img {
+  vertical-align: middle;
+  padding: 4px;
 }
 
 .profil_content a {
