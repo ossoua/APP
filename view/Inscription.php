@@ -13,6 +13,7 @@
 
     <?php require './view/header_accueil.php'?>
 
+
   <section>
       <h1> Créez votre compte</h1>
       <p class="error"><?php echo $_SESSION['error'] ?></p>
@@ -60,10 +61,7 @@
 
     </form>
   </section>
-  <footer>
-    <a href="GCU.html"> Conditions générales d'utilisation & Règles de confidentialités </a>
-    Navajo 2019(©)
-  </footer>
+
 </body>
 
 </html>

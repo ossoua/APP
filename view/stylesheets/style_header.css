@@ -5,6 +5,7 @@
 body{
   margin: 0;
 }
+
 #logo{
   display: flex;
   flex-direction: row;
@@ -53,13 +54,13 @@ h3 {
 /* style footer */
 
 footer {
-  position: absolute;
-  height: 13px;
+  height: 15px;
+  bottom: 0;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: white;;
   box-shadow:0px -2px 2px #C0C0C0;
   font-size: 13px;
 }
