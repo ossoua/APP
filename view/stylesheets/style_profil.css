@@ -1,8 +1,8 @@
-html {
-
-}
 section{
-  padding-top: 30px;
+  padding-top:50px;
+  display: flex;
+  justify-content: space-around;
+
 }
 
 h3 {
@@ -10,21 +10,30 @@ h3 {
 }
 #mon_profil {
   padding: 30px;
-  box-shadow:0px 0px 3px #373536;
+  margin-left: 5%;
+  margin-right: 20%;
+  width: 100%;
   font-weight: bold;
-  margin-left: 30%;
-  margin-right: 30%;
   height: 390px;
-  background-color: #C0C0C0;
+  border : 2px solid;
+  border-color: #1C96E8;
+  box-shadow: 0px 0px 1px 1px #1C96E8;
 
 }
+#photo_profil{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: auto;
+  width: 100%;
+}
+
 .information {
   margin: 4px;
   height: 50px;
-  box-shadow:0px 0px 2px white;
   padding-left: 10px;
-  background-color: white;
-
+  border : 0.3px solid;
+  border-color: #ccc;
 }
 .edit_btn {
   border: none;
@@ -34,4 +43,18 @@ h3 {
   cursor: pointer;
   margin: 14px;
 
+}
+
+.photo {
+  border : 2px solid;
+  border-color: #1C96E8;
+  box-shadow: 0px 0px 1px 1px #1C96E8;
+  width: 250px;
+  height: 250px;
+  margin-top: 15px;
+}
+.photo img{
+display:block;
+margin-top: 55px ;
+margin-left:55px;
 }
