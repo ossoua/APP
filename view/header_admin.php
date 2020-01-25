@@ -4,11 +4,6 @@
     <img class="padding_menu" src="/view/img/DrivingAces.png" alt="DrivingAces" width="230px">
   </div>
 
-
-  <div class="help">
-    <a href="/FAQ"><img src="/view/img/help.png" alt="Help" width="25px" title="Besoin d'aide ? FAQ"></a>
-  </div>
-
   <div id="profil">
 
     <div class="profil_admin">
