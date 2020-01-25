@@ -1,34 +1,45 @@
-var searchElement = document.getElementById('search'),
-    results = document.getElementById('results'),
-    selectedResult = -1, //-1 équivaut à:  aucune recherche en cours
-    previousRequest,
-    previousValue = searchElement.value;
+var searchElement = document.getElementById('search');
+var results = document.getElementById('results');
+var selected = document.getElementById('selected'); //Zone de modification de l'utilisateur
+var modify = document.createElement("form"); //formulaire de mofidication de l'utilisateur
+var selectedResult = -1; //-1 équivaut à:  aucune recherche en cours
+var previousRequest;
+var previousValue = searchElement.value;
 
-function getResults(keyword){
+
+selected.appendChild(modify);
+modify.setAttribute('method', "post");
+modify.setAttribute('action', "/backoffice");
+
+
+function getResults(keyword) {
     //creation objet xml XMLHttpRequest
+    var xmlhttp;
     if (window.XMLHttpRequest) {
         xmlhttp = new XMLHttpRequest();
     } else {
         if (window.ActiveXObject)
             try {
-                xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");
+                xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
             } catch (e) {
                 try {
-                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
                 } catch (e) {
-                    return NULL;
+                    return null;
                 }
             }
     }
 
-    xmlhttp.open('GET','./controller/backoffice/autocompletion.php?search='+encodeURIComponent(keyword),true);
+    //envoi de la requete au serveur
+    xmlhttp.open('GET', './controller/backoffice/autocompletion.php?search=' + keyword, true);
 
 
-    xmlhttp.onreadystatechange=function () {
-        if (xmlhttp.readyState==4 && xmlhttp.status==200){
+    //traitement de la réponse
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             displayResults(xmlhttp.responseText);
         }
-    }
+    };
 
 
     xmlhttp.send(null);
@@ -36,15 +47,15 @@ function getResults(keyword){
 
 }
 
-function displayResults(response){
-    results.style.display = response.length ? 'block':'none';
-    if(response.length){
+function displayResults(response) {
+    results.style.display = response.length ? 'block' : 'none';
+    if (response.length) {
         response = response.split('|');
         var responseLength = response.length;
 
-        results.innerHTML=''; //on vide les anciens résultats
+        results.innerHTML = ''; //on vide les anciens résultats
 
-        for (var i=0;i < responseLength;i++){
+        for (var i = 0; i < responseLength; i++) {
             var row;
             var user;
             var action;
@@ -55,57 +66,103 @@ function displayResults(response){
             row = results.appendChild(document.createElement("tr"));
             user = document.createElement("td");
             user.style.width = "250px";
+
             row.appendChild(user);
             row.appendChild(action);
             user.innerHTML = response[i];
-            action.innerHTML = " <button class=\"edit_btn\"><img src=\"./view/img/mode_edit.png\" alt=\"edit\" width=15px>modifier </button> <button class=\"edit_btn\"><img src=\"./view/img/delete.png\" alt=\"supprimer\" width=15px>supprimer </button> " ;
-
-            
+            var access_code = parseInt(user.innerHTML.match(/Code d'accès: (\d+)/i)[1]);
+            action.innerHTML = " <button class=\"edit_btn\" onclick='getInfo(" + access_code + ")'><img src=\"./view/img/mode_edit.png\" alt=\"edit\" width=15px>modifier</button> " +
+                " <button class=\"edit_btn\" onclick='removeUser(" + access_code + ")'><img src=\"./view/img/delete.png\" alt=\"supprimer\" width=15px>supprimer</button> ";
         }
     }
 }
 
-function chooseResult(result){
-    searchElement.value = previousValue = result.innerHTML;
-    results.style.display = 'none';
-    results.className = '';
-    selectedResult = -1;
-    searchElement.focus();
+function removeUser(access_code){
+    var xmlhttp;
+    if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        if (window.ActiveXObject)
+            try {
+                xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                try {
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e) {
+                    return null;
+                }
+            }
+    }
+
+    xmlhttp.open("GET", "./controller/backoffice/autocompletion.php?access_code=" + access_code +
+        "&remove=true", true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            alert("Utilisateur supprimé");
+        }
+    }
+}
+
+function getInfo(access_code) {
+    var xmlhttp;
+    if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        if (window.ActiveXObject)
+            try {
+                xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                try {
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e) {
+                    return null;
+                }
+            }
+    }
+
+    xmlhttp.open("GET", "./controller/backoffice/autocompletion.php?access_code=" + access_code, true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            displayUserInfo(xmlhttp.response);
+        }
+    }
+}
+
+function displayUserInfo(user) {
+    user = user.split('|');
+
+
+    modify.innerHTML = "Prénom:<br>\n" +
+        "<input type=\"text\" name=\"first_name\" value=\"" + user[0] + "\"><br>\n" +
+        "Nom:<br>\n" +
+        "<input type=\"text\" name=\"name\" value=\"" + user[1] + "\"><br>\n" +
+        "Adresse:<br>\n" +
+        "<input type=\"text\" name=\"adress\" value=\"" + user[2] + "\"><br>\n" +
+        "Mail:<br>\n" +
+        "<input type=\"text\" name=\"mail\" value=\"" + user[3] + "\"><br>\n" +
+        "Administrateur (1 si oui):<br>\n" +
+        "<input type=\"text\" name=\"admin\" value=\"" + user[4] + "\"><br>\n" +
+        "<br>" +
+        "<input type='hidden' name='access_code' value='" + user[5] + "'>\n" +
+        "<input type=\"submit\" value=\"Modifier l'utilisateur\"><br>";
 }
 
 searchElement.addEventListener('keyup', function (e) {
-    var divs = results.getElementsByTagName('td');
-
-    if (e.key == 38 && selectedResult > -1){ //38 represente la fleche du haut
-        divs[selectedResult--].className='';
-
-        if (selectedResult > -1){
-            divs[selectedResult].className='result_focus';
-        }
-
-    }
-
-    else if (e.key==40 && selectedResult<divs.length-1){ //40 represente la fleche du bas
-        results.style.display = 'block';
-        if (selectedResult > -1){
-            divs[selectedResult].className='';
-        }
-        divs[++selectedResult].className='result_focus';
-    }
-
-    else if (e.key==13 && selectedResult > -1){
-        chooseResult(divs[selectedResult]);
-    }
-
-    else if (selectedResult != previousValue){ //on modifie la recherche
+    if (selectedResult != previousValue) { //on modifie la recherche
         previousValue = searchElement.value;
 
-        if (previousRequest && previousRequest.readyState < XMLHttpRequest.DONE){
+        if (previousRequest && previousRequest.readyState < XMLHttpRequest.DONE) {
             previousRequest.abort(); //arrêt de la requete en cours
         }
 
         previousRequest = getResults(previousValue);
 
         selectedResult = -1;
+        modify.innerHTML = " ";
     }
-})
+
+});
