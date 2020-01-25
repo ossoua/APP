@@ -1,7 +1,7 @@
 <?php
 
-require_once '/Users/theomartinez/Cours/APP/WEB/www/model/UserManager.php';
-require_once '/Users/theomartinez/Cours/APP/WEB/www/model/FAQManager.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/model/UserManager.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/model/FAQManager.php';
 $user = new UserManager();
 $faq = new FAQManager();
 

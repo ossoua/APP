@@ -1,6 +1,6 @@
 <?php
 
-require_once '/Users/theomartinez/Cours/APP/WEB/www/model/Manager.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/model/Manager.php';
 
 
 class UserManager extends Manager

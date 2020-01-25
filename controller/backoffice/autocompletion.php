@@ -1,7 +1,7 @@
 <?php
 
-//A MODIFIER EN LIGNE
-require_once '/Users/theomartinez/Cours/APP/WEB/www/model/UserManager.php';
+
+require_once $_SERVER['DOCUMENT_ROOT'].'/model/UserManager.php';
 
 
 
