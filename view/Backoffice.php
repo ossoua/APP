@@ -85,27 +85,29 @@
           </div>
             Fréquence cardiaque :
             <div class="testForm">
-                <input type="checkbox" name="cardiaque" value="Fréquence cardiaque">
+                <input type="checkbox" name="cardiaque">
             </div>
             Température de la peau :
             <div class="testForm">
-                <input type="checkbox" name="cardiaque" value="">
+                <input type="checkbox" name="peau">
             </div>
             Reconnaissance de tonalité :
             <div class="testForm">
-                <input type="checkbox" name="cardiaque" value="">
+                <input type="checkbox" name="tonalité">
             </div>
             Signal sonore innattendu :
             <div class="testForm">
-                <input type="checkbox" name="cardiaque" value="">
+                <input type="checkbox" name="son">
             </div>
             Signal visuel répété :
             <div class="testForm">
-                <input type="checkbox" name="cardiaque" value="">
+                <input type="checkbox" name="vision">
             </div>
             <p>
                 <a href="/view/AdminTest.php">
-                    <button type="button" name="test">Lancement du test</button>
+                  <div class="lancer">
+                    <input type="submit" name="" value="Lancement du test">
+                  </div>
                 </a>
             </p>
         </div>
