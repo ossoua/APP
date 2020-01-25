@@ -1,5 +1,6 @@
 <?php
 require_once '/Users/theomartinez/Cours/APP/WEB/www/model/FAQManager.php';
+
 $faq = new FAQManager();
 
 if (isset($_GET['request']) && $_GET['request'] == "faq"){

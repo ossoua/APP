@@ -1,16 +1,30 @@
 <?php
 
 require_once '/Users/theomartinez/Cours/APP/WEB/www/model/UserManager.php';
+require_once '/Users/theomartinez/Cours/APP/WEB/www/model/FAQManager.php';
 $user = new UserManager();
+$faq = new FAQManager();
 
 $codes = $user->getFreeCodes();
+$faqQuestions = $faq->getQuestions();
+$faqRep = $faq->getRep();
 
 function displayCodes($data)
 {
     foreach ($data as $code) {
         echo '<tr>
-                <td>'.$code['access_code'].'</td>
+                <td>'. $code['access_code'] .'</td>
                 <td>'. "Aucune action disponible" .'</td>
+              </tr>';
+    }
+}
+
+function displayFAQ($questions,$reponses)
+{
+    for ($i = 0;$i<count($questions);$i++) {
+        echo '<tr>
+                <td>'. $questions[$i] .'</td>
+                <td>'. $reponses[$i] .'</td>
               </tr>';
     }
 }
@@ -39,6 +53,11 @@ if (isset($_POST['name']) && isset($_POST['first_name']) && isset($_POST['adress
 } else if (isset($_POST['ok'])) {
     $user->createUser();
     header('Location: /backoffice');
+} else if (isset($_POST['question']) && isset($_POST['reponse'])) {
+    if ($_POST['question'] != "" && $_POST['reponse'] != "") {
+        $faq->newFaq($_POST['question'],$_POST['reponse']);
+        header('Location: /backoffice');
+    }
 } else {
     require_once './view/Backoffice.php';
 }

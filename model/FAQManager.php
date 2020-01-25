@@ -1,5 +1,5 @@
 <?php
-require '/Users/theomartinez/Cours/APP/WEB/www/model/Manager.php';
+require_once '/Users/theomartinez/Cours/APP/WEB/www/model/Manager.php';
 
 class FAQManager extends Manager
 {
@@ -32,5 +32,13 @@ class FAQManager extends Manager
         }
 
         return $answer;
+    }
+
+    public function newFaq($question,$reponse){
+        $new = $this->db->prepare("INSERT INTO FAQ (id_question, question, date, answer) VALUES (NULL, :question, CURRENT_DATE(), :reponse)");
+        $new->execute(array(
+            'question' => $question,
+            'reponse' => $reponse
+        ));
     }
 }

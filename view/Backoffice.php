@@ -37,7 +37,7 @@
             <br>
 
             <table id="codes">
-                <caption> Codes d'accès disponibles </caption>
+                <caption> Codes d'accès disponibles</caption>
                 <thead>
                 <tr>
                     <th width="250px">Code d'accès</th>
@@ -56,10 +56,10 @@
             <br>
 
             <?php
-                if (isset($_COOKIE['newcode']) && $_COOKIE['newcode'] != ""){
-                    echo "Nouvel utilisateur créé: " . $_COOKIE['newcode'] . ". Veuillez transmettre ce code au destinataire afin de permettre la création de son profil.";
-                    setcookie('newcode',"");
-                }
+            if (isset($_COOKIE['newcode']) && $_COOKIE['newcode'] != "") {
+                echo "Nouvel utilisateur créé: " . $_COOKIE['newcode'] . ". Veuillez transmettre ce code au destinataire afin de permettre la création de son profil.";
+                setcookie('newcode', "");
+            }
             ?>
         </div>
     </div>
@@ -76,36 +76,36 @@
                                                                                         alt="settings" width=20px></a>
         </div>
 
-    <div class="conteneur">
-        <h1>Lancer un test</h1>
-        Code d'accès :
-        <input type="text" name="code" >
-        Fréquence cardiaque :
-        <div class="testForm">
-          <input type="checkbox" name="cardiaque" value="Fréquence cardiaque">
+        <div class="conteneur">
+            <h1>Lancer un test</h1>
+            Code d'accès :
+            <input type="text" name="code">
+            Fréquence cardiaque :
+            <div class="testForm">
+                <input type="checkbox" name="cardiaque" value="Fréquence cardiaque">
+            </div>
+            Température de la peau :
+            <div class="testForm">
+                <input type="checkbox" name="cardiaque" value="">
+            </div>
+            Reconnaissance de tonalité :
+            <div class="testForm">
+                <input type="checkbox" name="cardiaque" value="">
+            </div>
+            Signal sonore innattendu :
+            <div class="testForm">
+                <input type="checkbox" name="cardiaque" value="">
+            </div>
+            Signal visuel répété :
+            <div class="testForm">
+                <input type="checkbox" name="cardiaque" value="">
+            </div>
+            <p>
+                <a href="/view/AdminTest.php">
+                    <button type="button" name="test">Lancement du test</button>
+                </a>
+            </p>
         </div>
-        Température de la peau :
-        <div class="testForm">
-          <input type="checkbox" name="cardiaque" value="">
-        </div>
-        Reconnaissance de tonalité :
-        <div class="testForm">
-          <input type="checkbox" name="cardiaque" value="">
-        </div>
-        Signal sonore innattendu :
-        <div class="testForm">
-          <input type="checkbox" name="cardiaque" value="">
-        </div>
-        Signal visuel répété :
-        <div class="testForm">
-          <input type="checkbox" name="cardiaque" value="">
-        </div>
-        <p>
-          <a href="/view/AdminTest.php">
-            <button type="button" name="test">Lancement du test</button>
-          </a>
-        </p>
-    </div>
 
 </section>
 
@@ -120,8 +120,24 @@
                                                                                         alt="settings" width=20px></a>
         </div>
 
-        <h1>FAQ</h1>
-        <h2>Modifier la FAQ</h2>
+        <div class="content">
+            <h2>Modifier la FAQ</h2>
+
+            <table id="faq">
+                <thead>
+                <tr>
+                    <th width="250px">Questions</th>
+                    <th width="250px">Réponses</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?= displayFAQ($faqQuestions, $faqRep) ?>
+                </tbody>
+            </table>
+            <button onclick="modify()">Ajouter une entrée</button>
+            <div id="modify">
+            </div>
+        </div>
     </div>
 </section>
 
@@ -142,5 +158,6 @@
 </section>
 
 <script src="./controller/backoffice/autocompletion.js"></script>
+<script src="./controller/backoffice/change_faq.js"></script>
 </body>
 </html>

@@ -30,10 +30,6 @@ section{
   background-color: #ccc;
 }
 
-.menu a.active {
-  background-color: #1C96E8;
-  color: white;
-}
 
 .conteneur {
   margin-top: 20px;
@@ -43,9 +39,8 @@ section{
   justify-content: center;
 }
 
-h1  {
+h2  {
   text-align: center;
-  padding: 10px;
 }
 
 input {
@@ -92,4 +87,9 @@ button {
 
 .testForm{
   width: 3%;
+}
+
+.content{
+  margin-left: 40%;
+  max-width: 40%;
 }
