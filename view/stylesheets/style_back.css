@@ -73,7 +73,7 @@ table, caption {
   margin-bottom: 20px;
 }
 
-button {
+.lancer {
     background-color: #1C96E8;
     width: 50%;
     font-size: 20px;
@@ -97,5 +97,5 @@ button {
 }
 
 .text{
-  width: 30%;
+  width: 30%
 }
