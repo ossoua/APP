@@ -20,5 +20,17 @@ else {
     header('Location: /user/connection');
 }
 
+function display_test($data)
+{
+    foreach ($data as $row) {
+        echo '<tr>
+                  <td>'.$row['id_user'].'</td>
+                  <td>'.$row['nom'].'</td>
+                  <td class="value">'.$row['value'].'</td>
+                  <td class="date">'.$row['date'].'</td>
+                  </tr>';
+    }
+}
+
 
 

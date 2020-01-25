@@ -34,7 +34,7 @@
 }
 
 /* Si le checkbox est coché, montrer tous les paragraphes */
-.faq-section input[type=checkbox]:checked~p.rep {
+.faq-section input[type=checkbox]:checked~p {
         display: block;
         color: #0cad69;
         font-size: 1em;

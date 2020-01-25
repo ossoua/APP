@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Mes tests</title>
     <link rel="stylesheet" href="/view/stylesheets/style_header.css">
-    
+
     <link rel="stylesheet" href="/view/stylesheets/style_test.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -70,7 +70,7 @@
             </tr>
         </thead>
         <tbody>
-            <?= $test->display_test($data); ?>
+            <?= display_test($data); ?>
         </tbody>
     </table>
       <div class="wraper">
