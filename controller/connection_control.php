@@ -37,6 +37,7 @@ function newConnection(){
             $_SESSION['name'] = $connection->getName();
             $_SESSION['first_name'] = $connection->getFirstName();
             $_SESSION['access_code'] = $connection->getAccessCode();
+            $_SESSION['adress'] = $connection->getAdress();
             echo 'Connexion établie';
             header('Location: /user/connection');
         }
