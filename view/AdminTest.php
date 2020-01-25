@@ -8,17 +8,8 @@
 
 </head>
 <body>
+<?php echo $_POST["code"];?>
 
-<form action="">
-    <select name="subject">
-        <option value="admin">Je souhaites devenir administrateur</option>
-        <option value="test">J'ai un problème avec l'affichage de mes données de test</option>
-        <option value="other">Autre demande</option>
-    </select>
-    Précisr votre demande: <br>
-    <input type="text" name="message">
-</form>
-  
 
 </body>
 </html>
