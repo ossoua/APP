@@ -1,15 +1,12 @@
 var searchElement = document.getElementById('search');
 var results = document.getElementById('results');
 var selected = document.getElementById('selected'); //Zone de modification de l'utilisateur
-var modify = document.createElement("form"); //formulaire de mofidication de l'utilisateur
+var modify = document.getElementById("modify"); //formulaire de mofidication de l'utilisateur
 var selectedResult = -1; //-1 équivaut à:  aucune recherche en cours
 var previousRequest;
 var previousValue = searchElement.value;
 
 
-selected.appendChild(modify);
-modify.setAttribute('method', "post");
-modify.setAttribute('action', "/backoffice");
 
 
 function getResults(keyword) {
@@ -127,7 +124,7 @@ function getInfo(access_code) {
 
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            displayUserInfo(xmlhttp.response);
+            displayUserInfo(xmlhttp.responseText);
         }
     }
 }
@@ -135,7 +132,7 @@ function getInfo(access_code) {
 function displayUserInfo(user) {
     user = user.split('|');
 
-
+    console.log(user);
     modify.innerHTML = "Prénom:<br>\n" +
         "<input type=\"text\" name=\"first_name\" value=\"" + user[0] + "\"><br>\n" +
         "Nom:<br>\n" +
@@ -149,6 +146,7 @@ function displayUserInfo(user) {
         "<br>" +
         "<input type='hidden' name='access_code' value='" + user[5] + "'>\n" +
         "<input type=\"submit\" value=\"Modifier l'utilisateur\"><br>";
+
 }
 
 searchElement.addEventListener('keyup', function (e) {

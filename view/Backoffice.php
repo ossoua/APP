@@ -33,6 +33,7 @@
             <br>
 
             <div id="selected">
+                <form  id="modify" action="/backoffice" method="post"></form>
             </div>
             <br>
 
@@ -135,9 +136,8 @@
                 <?= displayFAQ($faqQuestions, $faqRep, $faqId) ?>
                 </tbody>
             </table>
-            <button onclick="modify()">Ajouter une entrée</button>
-            <div id="modify">
-            </div>
+            <button onclick="modifyFaq()">Ajouter une entrée</button>
+            <form id="modifyFaq" action="/backoffice" method="post"></form>
         </div>
     </div>
 </section>
