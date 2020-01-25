@@ -34,6 +34,9 @@ function newConnection(){
             $_SESSION['password'] = $connection->getPassword();
             $_SESSION['mail'] = $connection->getMail();
             $_SESSION['admin'] = $connection->getAdmin();
+            $_SESSION['name'] = $connection->getName();
+            $_SESSION['first_name'] = $connection->getFirstName();
+            $_SESSION['access_code'] = $connection->getAccessCode();
             echo 'Connexion établie';
             header('Location: /user/connection');
         }

@@ -33,7 +33,7 @@ switch ($request) {
 
     case '/user/askAdmin':
     case '/administration':
-        require __DIR__ .'/controller/admin_control.php';
+        require __DIR__ . '/controller/contact_control.php';
         break;
 
     case '/backoffice':
