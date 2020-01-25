@@ -75,6 +75,8 @@ table, caption {
 
 button {
     background-color: #1C96E8;
+    width: 50%;
+    font-size: 20px;
     border: none;
     margin-left: 5px;
     margin-top: 5px;
@@ -92,4 +94,8 @@ button {
 .content{
   margin-left: 40%;
   max-width: 40%;
+}
+
+.text{
+  width: 30%;
 }
