@@ -1,36 +1,56 @@
 <?php
 
-require_once 'model/Manager.php';
+require_once '/Users/theomartinez/Cours/APP/WEB/www/model/Manager.php';
 
 
 class UserManager extends Manager
 {
 
-    protected $db;
+    private $db;
+    private $data;
+    private $users = array();
 
     public function __construct()
     {
         $this->db = $this->dbConnect();
     }
 
-    public function setUser($name,$first_name,$adress,$mail,$access_code,$password)
+    public function createUser(){
+        $req = $this->db->prepare('SELECT access_code FROM user');
+        $req->execute();
+        $array = [];
+
+        foreach ($req as $code){
+            array_push($array,$code['access_code']);
+        }
+
+        $max = max($array);
+        $access_code = $max + 1;
+
+
+        $new = $this->db->prepare("INSERT INTO user (id_user, access_code, password, name, first_name, adress, mail, phone, admin) VALUES (NULL, :access_code, '', '', '', '', '', '', '0')");
+        $new->execute(array(
+            'access_code' => $access_code
+        ));
+
+        setcookie('newcode',$access_code);
+        echo 'Nouveau code généré';
+    }
+
+    public function setUser($name, $first_name, $adress, $mail, $access_code, $password)
     {
         $req = $this->db->prepare('UPDATE user SET password = :password, name = :name, first_name = :first_name, adress = :adress, mail = :mail WHERE access_code = :access_code');
         $req->execute(array(
-      'password' => $password,
-      'name'  => $name,
-      'first_name' => $first_name,
-      'adress' => $adress,
-      'mail' => $mail,
-      'access_code' => $access_code
-    ));
+            'password' => $password,
+            'name' => $name,
+            'first_name' => $first_name,
+            'adress' => $adress,
+            'mail' => $mail,
+            'access_code' => $access_code
+        ));
 
         echo "Inscription validée";
     }
-<<<<<<< HEAD
-
-
-
 
     public function getUsers()
     {
@@ -46,7 +66,6 @@ class UserManager extends Manager
 
         return $this->users;
     }
-
 
     public function getUserInfo($access_code){
         $req = $this->db->prepare('SELECT name, first_name, adress, mail, admin FROM user WHERE access_code = :access_code');
@@ -114,6 +133,4 @@ class UserManager extends Manager
             'access_code' => $access_code
         ));
     }
-=======
->>>>>>> parent of da4e641... Merge branch 'master' of https://github.com/ossoua/APP
 }
