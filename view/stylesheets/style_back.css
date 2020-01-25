@@ -78,9 +78,18 @@ table, caption {
 
 button {
     background-color: #1C96E8;
+    font-size: 20px;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
 }
 
 
 #search{
   width: 500px;
+}
+
+.testForm{
+  width: 3%;
 }
