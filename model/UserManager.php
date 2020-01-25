@@ -52,11 +52,10 @@ class UserManager extends Manager
         echo "Inscription validée";
     }
 
-<<<<<<< HEAD
+
+
+
     public function getUsers()
-=======
-    function getUsers()
->>>>>>> parent of 3359ed3... Revert "Merge branch 'master' of https://github.com/ossoua/APP"
     {
         $req = $this->db->prepare('SELECT name, first_name, access_code FROM user');
         $req->execute();
@@ -71,11 +70,8 @@ class UserManager extends Manager
         return $this->users;
     }
 
-<<<<<<< HEAD
+
     public function getUserInfo($access_code){
-=======
-    function getUserInfo($access_code){
->>>>>>> parent of 3359ed3... Revert "Merge branch 'master' of https://github.com/ossoua/APP"
         $req = $this->db->prepare('SELECT name, first_name, adress, mail, admin FROM user WHERE access_code = :access_code');
         $req->execute(array(
             'access_code' => $access_code
