@@ -46,9 +46,33 @@
 
     <div class="conteneur">
         <h1>Lancer un test</h1>
-        <a href="/view/AdminTest.php">
+        Code d'accès : 
+        <input type="text" name="code" >
+        Fréquence cardiaque :
+        <div class="testForm">
+          <input type="checkbox" name="cardiaque" value="Fréquence cardiaque">
+        </div>
+        Température de la peau :
+        <div class="testForm">
+          <input type="checkbox" name="cardiaque" value="">
+        </div>
+        Reconnaissance de tonalité :
+        <div class="testForm">
+          <input type="checkbox" name="cardiaque" value="">
+        </div>
+        Signal sonore innattendu :
+        <div class="testForm">
+          <input type="checkbox" name="cardiaque" value="">
+        </div>
+        Signal visuel répété :
+        <div class="testForm">
+          <input type="checkbox" name="cardiaque" value="">
+        </div>
+        <p>
+          <a href="/view/AdminTest.php">
             <button type="button" name="test">Lancement du test</button>
-        </a>
+          </a>
+        </p>
     </div>
 
 
