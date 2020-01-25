@@ -1,2 +1,7 @@
 /.idea/
 
+*.xml
+*.xml
+.idea/dictionaries/theomartinez.xml
+controller/.DS_Store
+model/.DS_Store
