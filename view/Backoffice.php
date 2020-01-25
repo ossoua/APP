@@ -80,7 +80,9 @@
         <div class="conteneur">
             <h1>Lancer un test</h1>
             Code d'accès :
+            <div class="text">
             <input type="text" name="code">
+          </div>
             Fréquence cardiaque :
             <div class="testForm">
                 <input type="checkbox" name="cardiaque" value="Fréquence cardiaque">
