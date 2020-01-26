@@ -16,6 +16,7 @@ section{
 }
 
 button{
-  border = none;
+  border: none;
   background-color: #00E986;
+  font-size: 25px;
 }
