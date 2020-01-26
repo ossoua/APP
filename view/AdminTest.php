@@ -12,6 +12,8 @@
 <div class="décompte">
   <h1 id="count">10</h1>
 </div>
+<?php if(isset($_COOKIE['code'])){echo "Code récupéré";}
+else {echo"Pas de code récupéré";} ?>
 
 </body>
 </html>
