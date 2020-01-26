@@ -39,11 +39,7 @@
 
 
   </section>
-  <footer>
-    <a href="GCU.html" style="text-decoration: none"> Conditions générales d'utilisation & Règles de confidentialités </a>
-    Navajo 2019(©)
-  </footer>
-
+  
 <script src="/view/TestJS.js"></script>
 </body>
 
