@@ -20,15 +20,15 @@ if (isset($_POST['vision'])) {
 }
 
 if(isset($_COOKIE["tonalité"])) {
-  $message = "Test de reconnaissance de tonalité";
+  $message = "Reconnaissance de tonalité";
 }
 
 else if(isset($_COOKIE["son"])) {
-  $message = "Test de réaction à un signal sonore innattendu";
+  $message = "Réaction à un signal sonore innattendu";
 }
 
 else if(isset($_COOKIE["vision"])) {
-  $message = "Test de réaction à un signal visuel attendu";
+  $message = "Réaction à un signal visuel attendu";
 }
 
 require $_SERVER['DOCUMENT_ROOT'].'/view/AdminTest.php';
