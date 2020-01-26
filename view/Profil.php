@@ -12,19 +12,9 @@
 
 <?php require './view/header_user.php' ?>
 
-
+<h1>Mon profil</h1>
 <section>
-    <div id="photo_profil">
-        <h3>Bonjour <?= $_SESSION['first_name'] . " " . $_SESSION['name'] ?></h3>
-        <div class="photo">
-            <form action="/user/profil" method="post">
-                <input type="file" name="photo">
-                <input type="image" src="../view/img/mode_edit.png" alt="Submit Form"/>
-            </form>
-            <img src="/view/img/add_photo.png" alt="photo de profil" width="50%">
-        </div>
 
-    </div>
 
     <div id="mon_profil">
 
@@ -58,6 +48,7 @@
             <input type="image" src="../view/img/mode_edit.png" alt="Submit Form"/>
         </form>
     </div>
+    <img class="personnage" src="../view/img/1.png" alt="personnage">
 </section>
 
 
