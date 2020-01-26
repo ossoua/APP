@@ -117,3 +117,11 @@ footer {
 strong {
   color: #00E986;
 }
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  font-weight: bold;
+  color: #00E986;
+}
