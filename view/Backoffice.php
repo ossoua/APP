@@ -18,7 +18,7 @@
                                                                            width=20px></a>
             <a href="#section2">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
             <a href="#section3">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
-            
+
         </div>
 
         <div class="conteneur">
@@ -80,7 +80,7 @@
             <form method="post" action="/view/AdminTest.php">
             Code d'accès :
             <div class="text">
-              <input type="text" id="code">
+              <input type="text" name="code">
             </div>
             Fréquence cardiaque :
             <div class="testForm">
