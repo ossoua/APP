@@ -8,9 +8,21 @@
 
   </head>
   <body>
-  <?php
-  require './view/header_user.php';
-  ?>
+
+  <header>
+      <div id="logo">
+          <img src="/view/img/logo_produit.png" alt="Logo Produit" width="100px">
+          <img class="padding_menu" src="/view/img/DrivingAces.png" alt="DrivingAces" width="230px">
+      </div>
+
+
+      <div id="profil">
+          <div class="profil_admin">
+              <a href="/user/profil"><button class="profil_btn"><img src="/view/img/account.png" width="35px"></button></a>
+          </div>
+      </div>
+
+  </header>
 
     <div id="faq">
 

@@ -13,14 +13,13 @@
         <img class="connection" src="/view/img/DrivingAces.png" alt="DrivingAces" width="200px">
 
           <form method="post" action="/user/connection">
-            <p>
 
               <label for="mail">Adresse mail </label>
               <input type="email" name="mail" id="mail" required/>
 
               <label for="password">Mot de passe </label>
               <input type="password" name="password" id="password"required/></br>
-              <a href="motdepasse.html"> Mot de passe oublié?</a>
+              <a href="/user/reset"> Mot de passe oublié?</a>
 
               <input type="submit" value="Se connecter" /></br>
 

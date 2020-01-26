@@ -133,4 +133,13 @@ class UserManager extends Manager
             'access_code' => $access_code
         ));
     }
+
+    public function getUserAccess($mail){
+        $req = $this->db->prepare('SELECT access_code FROM user WHERE mail = :mail');
+        $req->execute(array(
+            'mail' => $mail
+        ));
+        $req = $req->fetch();
+        return $req['$access_code'];
+    }
 }
