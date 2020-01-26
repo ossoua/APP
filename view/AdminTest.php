@@ -16,5 +16,8 @@
     <a href="/controller/admintest_control.php">
       <button type="button" name="button">Passer au test suivant</button>
     </a>
+    <a href="backoffice.php">
+      <button type="button" name="button">Quitter le test</button>
+    </a>
 </body>
 </html>
