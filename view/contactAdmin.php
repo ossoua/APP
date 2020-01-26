@@ -20,11 +20,11 @@
         <option value="other">Autre demande</option>
     </select> <br><br><br>
     Veuillez préciser votre demande: <br>
-    <input type="text" name="message">
+    <textarea rows="10" name="message">Votre message ici...</textarea>
     <input type="submit" value="Envoyer">
 </form>
 
 
-
+<?php require './view/footer.php'?>
 </body>
 </html>

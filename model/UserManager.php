@@ -142,4 +142,18 @@ class UserManager extends Manager
         $req = $req->fetch();
         return $req['access_code'];
     }
+
+    public function checkCode($access_code){
+        $req = $this->db->prepare('SELECT * FROM user WHERE access_code = :access_code');
+        $req->execute(array(
+            'access_code' => $access_code
+        ));
+        $req = $req->fetch();
+        if (isset($req['name'])){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
