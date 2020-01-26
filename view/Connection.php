@@ -13,21 +13,22 @@
         <img class="connection" src="/view/img/DrivingAces.png" alt="DrivingAces" width="200px">
 
           <form method="post" action="/user/connection">
+            <p>
 
               <label for="mail">Adresse mail </label>
               <input type="email" name="mail" id="mail" required/>
 
               <label for="password">Mot de passe </label>
               <input type="password" name="password" id="password"required/></br>
-              <a href="/user/reset"> Mot de passe oublié?</a>
+              <center><a href="/user/reset"> Mot de passe oublié?</a></center>
 
               <input type="submit" value="Se connecter" /></br>
 
 
-
-              <p> Vous n'avez pas de compte ? <a href="inscription">Inscrivez-vous.</a> </p>
-
-              <p> * Champs obligatoires </p>
+              <font size=2>
+              <center><p> Vous n'avez pas de compte ? <a href="inscription">Inscrivez-vous.</a> </p></center>
+              <br>
+              <div align="right"><p> * Champs obligatoires </p></div>
 
           </form>
     </section>

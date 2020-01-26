@@ -46,15 +46,15 @@
       <input type="text" name="access_code" id="access_code" required /></br>
 
       <input type="checkbox" name="conditions" id="conditions" required />
-      <label for="conditions" class=inline>J'ai lu et j'accepte les <a href="/cgu">conditions générales d'utilisation</a> </label>
+      <label for="conditions" class=inline>J'ai lu et j'accepte les <a href="/user/CGU">conditions générales d'utilisation</a> </label>
 
       <input type="submit" value="S'inscrire" /></br>
 
 
       <font size=2>
-        <p> Vous avez déjà un compte ? <a href="/user/connection">Connectez-vous</a> </p>
+      <center><p> Vous avez déjà un compte ? <a href="/user/connection">Connectez-vous</a> </p></center>
 
-        <p> * Champs obligatoires </p>
+      <div align="right"><p> * Champs obligatoires </p></div>
       </font>
 
 
