@@ -32,14 +32,6 @@ if (!isset($_SESSION['id_user'])){
     $_SESSION['mail'] = $_POST['mail'];
     setcookie('modified',"true");
     header("Location: /user/profil");
-} elseif (isset($_FILES['photo']) && $_FILES['photo']['error'] == 0){
-    $info = pathinfo($_FILES['photo']['name']);
-    $extension_upload = $info['extension'];
-    $extensions_authorized = array('jpg', 'jpeg', 'gif', 'png');
-    if (in_array($extension_upload,$extensions_authorized)){
-        move_uploaded_file($_FILES['photo']['tmp_name'], './user_img',$_SESSION['access_code'].$info['extension']);
-        echo "L'envoi est validé";
-    }
 }
 else{
     require './view/Profil.php';

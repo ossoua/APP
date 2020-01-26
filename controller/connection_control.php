@@ -42,7 +42,7 @@ function newConnection(){
             header('Location: /user/connection');
         }
         catch (Exception $e) {
-            echo 'Connexion échouée';
+            echo '<br>Connexion échouée';
         }
 
 

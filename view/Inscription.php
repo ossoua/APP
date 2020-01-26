@@ -46,7 +46,7 @@
       <input type="text" name="access_code" id="access_code" required /></br>
 
       <input type="checkbox" name="conditions" id="conditions" required />
-      <label for="conditions" class=inline>J'ai lu et j'accepte les <a href="GCU.php">conditions générales d'utilisation</a> </label>
+      <label for="conditions" class=inline>J'ai lu et j'accepte les <a href="/cgu">conditions générales d'utilisation</a> </label>
 
       <input type="submit" value="S'inscrire" /></br>
 

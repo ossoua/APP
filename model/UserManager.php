@@ -140,6 +140,6 @@ class UserManager extends Manager
             'mail' => $mail
         ));
         $req = $req->fetch();
-        return $req['$access_code'];
+        return $req['access_code'];
     }
 }

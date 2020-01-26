@@ -51,6 +51,8 @@ switch ($url[0]) {
 
 
 
+
+
     default:
     http_response_code(404);
     require __DIR__ . '/404.php';
