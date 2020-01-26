@@ -15,8 +15,6 @@
 <a href="/user/logout" style="float: right">Déconnexion</a>
 
   <section>
-    <p> Imprimer mes résultats <img src="/view/img/print.png" alt="Print" width="20px" title="Imprimer"> </p>
-
     <table id="tests">
       <caption> Mes tests </caption>
         <thead>
