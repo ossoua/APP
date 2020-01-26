@@ -17,9 +17,6 @@ body{
   text-align: center;
 }
 
-#presentation{
-
-}
 
 #titre{
   display: block;
@@ -35,7 +32,8 @@ body{
 
 section{
   height: 100vh;
-  min-height: 700px;
+  min-height: 600px;
+  overflow: auto;
 }
 
 .bandeau{
@@ -78,8 +76,7 @@ h1{
 }
 
 p{
-  justify-content: center;
-  padding: 40px;
+  padding: 10px;
   width: 80%;
   text-align: justify;
 }
@@ -110,9 +107,8 @@ h1.formulaire{
 }
 
 .colonne{
-  display: flex;
-  flex-direction: column;
   margin-bottom: 5%;
+
 }
 
 #envoyer{
