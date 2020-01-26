@@ -53,6 +53,10 @@ switch ($url[0]) {
         require __DIR__ . '/controller/reset_control.php';
         break;
 
+    case '/backoffice/test':
+        require __DIR__ . '/controller/admintest_control.php';
+        break;
+
 
 
 
