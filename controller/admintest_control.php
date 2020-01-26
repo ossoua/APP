@@ -6,7 +6,7 @@ $message = "";
 
 if (isset($_POST['tonalité'])) {
   $cookie_tonalite = $_POST['tonalité'];
-  setcookie("tonalité", $cookie_tonalite, time() + (20), "/");
+  setcookie("tonalité", $cookie_tonalite, time() + (5), "/");
 }
 
 if (isset($_POST['son'])) {
@@ -16,18 +16,18 @@ if (isset($_POST['son'])) {
 
 if (isset($_POST['vision'])) {
   $cookie_vision = $_POST['vision'];
-  setcookie("vision", $cookie_vision, time() + (20), "/");
+  setcookie("vision", $cookie_vision, time() + (40), "/");
 }
 
 if(isset($_COOKIE["tonalité"])) {
   $message = "Test de reconnaissance de tonalité";
 }
 
-if(isset($_COOKIE["son"])) {
+else if(isset($_COOKIE["son"])) {
   $message = "Test de réaction à un signal sonore innattendu";
 }
 
-if(isset($_COOKIE["vision"])) {
+else if(isset($_COOKIE["vision"])) {
   $message = "Test de réaction à un signal visuel attendu";
 }
 
