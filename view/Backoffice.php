@@ -77,7 +77,7 @@
 
         <div class="conteneur">
             <h1>Lancer un test</h1>
-            <form method="post" action="/view/AdminTest.php">
+            <form method="post" action="./controller/admintest_control.php">
             Code d'accès :
             <div class="text">
               <input type="text" name="code">
