@@ -9,3 +9,13 @@ h1{
   transform: translate(-50%, -50%);
   font-size: 90px;
 }
+
+section{
+  justify-content: space-between;
+  height: 100vh;
+}
+
+button{
+  border = none;
+  background-color: #00E986;
+}
