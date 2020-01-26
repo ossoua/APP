@@ -25,16 +25,13 @@
               <input type="submit" value="Se connecter" /></br>
 
 
-            <font size=2>
+
               <p> Vous n'avez pas de compte ? <a href="inscription">Inscrivez-vous.</a> </p>
 
               <p> * Champs obligatoires </p>
-            </font>
+
           </form>
     </section>
-    <footer>
-      <a href="GCU.html"> Conditions générales d'utilisation & Règles de confidentialités </a>
-      Navajo 2019(©)
-    </footer>
+    
   </body>
 </html>
