@@ -5,6 +5,7 @@
     <title>BackOffice</title>
     <link rel="stylesheet" href="/view/stylesheets/style_header.css">
     <link rel="stylesheet" href="/view/stylesheets/style_admintest.css">
+    <script src=countdown.js></script>
 
 </head>
 <body>
