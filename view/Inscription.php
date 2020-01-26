@@ -52,9 +52,9 @@
 
 
       <font size=2>
-        <p> Vous avez déjà un compte ? <a href="/user/connection">Connectez-vous</a> </p>
+      <center><p> Vous avez déjà un compte ? <a href="/user/connection">Connectez-vous</a> </p></center>
 
-        <p> * Champs obligatoires </p>
+      <div align="right"><p> * Champs obligatoires </p></div>
       </font>
 
 

@@ -19,19 +19,20 @@
               <input type="email" name="mail" id="mail" required/>
 
               <label for="password">Mot de passe </label>
-              <input type="password" name="password" id="password"required/></br>
-              <a href="motdepasse.html"> Mot de passe oublié?</a>
+              <input type="password" name="password" id="password"required/>
+              <center><a href="motdepasse.html"> Mot de passe oublié?</a></center>
+              <br>
 
               <input type="submit" value="Se connecter" /></br>
 
 
-
-              <p> Vous n'avez pas de compte ? <a href="inscription">Inscrivez-vous.</a> </p>
-
-              <p> * Champs obligatoires </p>
+              <font size=2>
+              <center><p> Vous n'avez pas de compte ? <a href="inscription">Inscrivez-vous.</a> </p></center>
+              <br>
+              <div align="right"><p> * Champs obligatoires </p></div>
 
           </form>
     </section>
-    
+
   </body>
 </html>
