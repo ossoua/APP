@@ -2,10 +2,20 @@ body{
   background-color: #1C96E8;
 }
 
-.décompte{
+h1{
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 90px;
+}
+
+section{
+  justify-content: space-between;
+  height: 100vh;
+}
+
+button{
+  border = none;
+  background-color: #00E986;
 }

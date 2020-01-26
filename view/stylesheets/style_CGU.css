@@ -1,0 +1,14 @@
+html {
+  font-family: Arial;
+}
+section {
+  margin-left: 10%;
+  width: 80%;
+  max-height: 400px;
+  overflow: auto;
+}
+
+h3 {
+  text-decoration: underline;
+  color:  #1C96E8;
+}
