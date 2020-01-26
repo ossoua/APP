@@ -18,8 +18,7 @@
                                                                            width=20px></a>
             <a href="#section2">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
             <a href="#section3">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
-            <a href="#section4">Modifier les conditions générales de l'utilisateur <img src="./view/img/settings.png"
-                                                                                        alt="settings" width=20px></a>
+            
         </div>
 
         <div class="conteneur">
@@ -73,8 +72,7 @@
             <a href="#section1">Gérer les utilisateurs <img src="./view/img/users.png" alt="users" width=20px></a>
             <a href="#section2" class="active">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
             <a href="#section3">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
-            <a href="#section4">Modifier les conditions générales de l'utilisateur <img src="./view/img/settings.png"
-                                                                                        alt="settings" width=20px></a>
+
         </div>
 
         <div class="conteneur">
@@ -121,8 +119,7 @@
             <a href="#section1">Gérer les utilisateurs <img src="./view/img/users.png" alt="users" width=20px></a>
             <a href="#section2">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
             <a href="#section3" class="active">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
-            <a href="#section4">Modifier les conditions générales de l'utilisateur <img src="./view/img/settings.png"
-                                                                                        alt="settings" width=20px></a>
+
         </div>
 
         <div class="content">
@@ -146,21 +143,7 @@
     </div>
 </section>
 
-<section id="section4">
-    <?php require './view/header_admin.php' ?>
-    <div class="wraper">
-        <div class="menu">
-            <a href="#section1">Gérer les utilisateurs <img src="./view/img/users.png" alt="users" width=20px></a>
-            <a href="#section2">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
-            <a href="#section3">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
-            <a href="#section4" class="active">Modifier les conditions générales de l'utilisateur <img
-                        src="./view/img/settings.png" alt="settings" width=20px></a>
-        </div>
 
-        <h1>CGU</h1>
-        <h2>Modifier les CGU</h2>
-    </div>
-</section>
 
 <script src="./controller/backoffice/autocompletion.js"></script>
 <script src="./controller/backoffice/change_faq.js"></script>
