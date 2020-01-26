@@ -17,6 +17,10 @@
     <div id="photo_profil">
         <h3>Bonjour <?= $_SESSION['first_name'] . " " . $_SESSION['name'] ?></h3>
         <div class="photo">
+            <form action="/user/profil" method="post">
+                <input type="file" name="photo">
+                <input type="image" src="../view/img/mode_edit.png" alt="Submit Form"/>
+            </form>
             <img src="/view/img/add_photo.png" alt="photo de profil" width="50%">
         </div>
 
@@ -42,7 +46,7 @@
         <br>
         <label>Adresse postale</label>
         <br>
-        <form action="/user/profil" method="post" name="adress"><input class="information" type="text"
+        <form action="/user/profil" method="post"><input name="adress" class="information" type="text"
                                                                        value="<?= $_SESSION['adress'] ?>">
             <input type="image" src="../view/img/mode_edit.png" alt="Submit Form"/>
         </form>
