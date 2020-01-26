@@ -2,7 +2,7 @@
 
 session_start();
 
-$message = "";
+$message = "Quitter le test";
 
 if (isset($_POST['tonalité'])) {
   $cookie_tonalite = $_POST['tonalité'];
@@ -34,5 +34,4 @@ else if(isset($_COOKIE["son"])) {
 else if(isset($_COOKIE["vision"])) {
   $message = "Réaction à un signal visuel attendu";
 }
-
 require $_SERVER['DOCUMENT_ROOT'].'/view/AdminTest.php';
