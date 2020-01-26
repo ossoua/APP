@@ -35,6 +35,10 @@ switch ($request) {
         require __DIR__ . '/controller/backoffice/backoffice_controller.php';
         break;
 
+    case '/user/CGU':
+        require __DIR__ . '/view/CGU.php';
+        break;
+
     case '/user/profil':
         require __DIR__ . '/controller/profil_control.php';
         break;
