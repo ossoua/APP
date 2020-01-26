@@ -2,6 +2,7 @@ body{
   height: 100%;
   margin: 0;
   overflow: hidden;
+  min-width: fit-content;
 }
 
 .wraper{
@@ -9,7 +10,6 @@ body{
   color: #707070;
   justify-content: space-around;
   align-items: flex-end;
-
 }
 
 #page_accueil{
@@ -35,6 +35,7 @@ body{
 
 section{
   height: 100vh;
+  min-height: 700px;
 }
 
 .bandeau{
