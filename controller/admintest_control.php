@@ -4,6 +4,12 @@ session_start();
 
 $message = "Quitter le test";
 
+$erreur = "";
+
+if((!isset($_POST['tonalité'])) && (!isset($_POST['son'])) && (!isset($_POST['vision']))) {
+  header('Location: /backoffice#section2');
+}
+
 if (isset($_POST['tonalité'])) {
   $cookie_tonalite = $_POST['tonalité'];
   setcookie("tonalité", $cookie_tonalite, time() + (5), "/");
@@ -34,4 +40,5 @@ else if(isset($_COOKIE["son"])) {
 else if(isset($_COOKIE["vision"])) {
   $message = "Réaction à un signal visuel attendu";
 }
+
 require $_SERVER['DOCUMENT_ROOT'].'/view/AdminTest.php';
