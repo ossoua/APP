@@ -1,4 +1,4 @@
-setState = 10;
+var setState = 10;
 
 function countdown() {
 	setState--;
