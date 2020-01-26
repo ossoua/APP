@@ -49,15 +49,15 @@
     </div>
 
     <div class="texte">
-        <h2>Driving Aces définit la nouvelle génération des tests psychotechniques</h2>
-        <p>
-            Les tests psychotechniques sont des tests effectués par un psychologue, en complément d’une visite médicale.
-            Ils ont pour but de vérifier votre aptitude à conduire et à réagir de manière appropriée aux diverses
+        <h2 style="padding-top: 5%">Driving Aces définit la nouvelle génération des tests psychotechniques</h2>
+        <p style="padding-bottom: 10%">
+            Les tests psychotechniques ont pour but de vérifier votre aptitude à conduire et à réagir de manière appropriée aux diverses
             situations rencontrées sur la
             route. Si vous devez vous soumettre aux tests psychotechniques en cas de permis suspendu ou annulé, cela
             sera précisé dans la lettre de notification de la sanction.
 
         </p>
+
         <img id="discover" src="./view/img/img_decouvrir@2x.png" alt="image_decouvrir">
         <div class="nous_rejoindre">
             <h3>Nous rejoindre</h3>
@@ -72,6 +72,9 @@
     <div class="wraper">
     <div class="colonne">
         <h1 class="formulaire">Formulaire de contact</h1>
+        <p>
+            Vous souhaitez obtenir DrivingAces dans votre auto-ecole ? Contactez-nous !
+        </p>
         <form class="" action="" method="post">
             <p><input type="text" name="nom" value="" placeholder="Votre nom" required></p>
             <p><textarea name="message" rows="8" cols="80" placeholder="Votre message" required></textarea></p>

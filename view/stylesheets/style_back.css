@@ -6,6 +6,7 @@ body{
 section{
   justify-content: space-between;
   height: 100vh;
+  overflow: auto;
 }
 .wraper{
   display: flex;
@@ -97,3 +98,4 @@ table, caption {
 .text{
   width: 30%
 }
+
