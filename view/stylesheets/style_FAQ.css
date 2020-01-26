@@ -12,6 +12,7 @@
 /* Espacement entre les questions */
 .faq-section{
         margin: auto;
+        display: block;
 }
 
 

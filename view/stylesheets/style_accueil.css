@@ -2,6 +2,7 @@ body{
   height: 100%;
   margin: 0;
   overflow: hidden;
+  min-width: fit-content;
 }
 
 .wraper{
@@ -9,7 +10,6 @@ body{
   color: #707070;
   justify-content: space-around;
   align-items: flex-end;
-
 }
 
 #page_accueil{
@@ -17,9 +17,6 @@ body{
   text-align: center;
 }
 
-#presentation{
-
-}
 
 #titre{
   display: block;
@@ -31,10 +28,13 @@ body{
 #test{
   font-size: 2.5em;
   margin-bottom: 1px;
+  margin-top: 50px;
 }
 
 section{
   height: 100vh;
+  min-height: 600px;
+  overflow: auto;
 }
 
 .bandeau{
@@ -77,8 +77,7 @@ h1{
 }
 
 p{
-  justify-content: center;
-  padding: 40px;
+  padding: 10px;
   width: 80%;
   text-align: justify;
 }
@@ -109,9 +108,8 @@ h1.formulaire{
 }
 
 .colonne{
-  display: flex;
-  flex-direction: column;
   margin-bottom: 5%;
+
 }
 
 #envoyer{

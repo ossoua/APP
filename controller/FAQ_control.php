@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/model/Manager.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/model/FAQManager.php';
 
 $faq = new FAQManager();
 

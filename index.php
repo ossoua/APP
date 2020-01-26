@@ -1,7 +1,13 @@
 <?php
 $request = $_SERVER['REQUEST_URI'];
+if (strpos($request,'?')){
+    $url = explode('?',$request);
+} else {
+    $url = array();
+    array_push($url,$request);
+}
 
-switch ($request) {
+switch ($url[0]) {
     case '':
     case '/':
         require __DIR__ . '/controller/index_control.php';
@@ -43,6 +49,16 @@ switch ($request) {
         require __DIR__ . '/controller/profil_control.php';
         break;
 
+    case '/user/reset':
+        require __DIR__ . '/controller/reset_control.php';
+        break;
+
+    case '/backoffice/test':
+        require __DIR__ . '/controller/admintest_control.php';
+        break;
+
+
+
 
 
     default:
@@ -52,7 +68,7 @@ switch ($request) {
 }
 
 //mdp Drivingaces1234
-
+//$db = new PDO('mysql:host=queeniestgroot.mysql.db;dbname=queeniestgroot;charset=utf8', 'queeniestgroot', 'Drivingaces1234');
 //AUTO-LOAD Classes
 spl_autoload_register(function($class) {
     require_once './model/' . $class . '.php';

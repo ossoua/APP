@@ -10,8 +10,8 @@
 <body>
 
 <section id="section1">
-    <?php require './view/header_admin.php' ?>
 
+    <?php require './view/header_admin.php' ?>
     <div class="wraper">
         <div class="menu">
             <a href="#section1" class="active">Gérer les utilisateurs <img src="./view/img/users.png" alt="users"
@@ -77,7 +77,7 @@
 
         <div class="conteneur">
             <h1>Lancer un test</h1>
-            <form method="post" action="./controller/admintest_control.php">
+            <form method="post" action="/backoffice/test">
             Code d'accès :
             <div class="text">
               <input type="text" name="code">

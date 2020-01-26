@@ -21,7 +21,6 @@
       <caption> Mes tests </caption>
         <thead>
             <tr>
-                <th width="250px">Nom du spécialiste</th>
                 <th width="250px">Nom du test</th>
                 <th width="600px">Résultats</th>
                 <th width="150px">Date</th>

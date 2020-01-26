@@ -60,7 +60,7 @@ class UserManager extends Manager
 
         $i=0;
         foreach ($this->data as $row){
-            $this->users[$i] = $row['first_name'] . " " . $row['name'] . " <br> Code d'accès: " . $row['access_code'];
+            $this->users[$i] = $row['first_name'] . " " . $row['name'] . " <br>Code d'accès: " . $row['access_code'];
             $i++;
         }
 
@@ -132,5 +132,14 @@ class UserManager extends Manager
         $req->execute(array(
             'access_code' => $access_code
         ));
+    }
+
+    public function getUserAccess($mail){
+        $req = $this->db->prepare('SELECT access_code FROM user WHERE mail = :mail');
+        $req->execute(array(
+            'mail' => $mail
+        ));
+        $req = $req->fetch();
+        return $req['access_code'];
     }
 }
