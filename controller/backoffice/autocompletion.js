@@ -97,7 +97,8 @@ function removeUser(access_code){
 
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            alert("Utilisateur supprimé");
+            alert("Utilisateur supprimé. Rechargement de la page...");
+            location.reload();
         }
     }
 }

@@ -27,7 +27,6 @@ switch ($request) {
         require __DIR__ . '/controller/FAQ_control.php';
         break;
 
-    case '/user/askAdmin':
     case '/administration':
         require __DIR__ . '/controller/contact_control.php';
         break;

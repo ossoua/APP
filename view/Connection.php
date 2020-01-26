@@ -25,11 +25,11 @@
               <input type="submit" value="Se connecter" /></br>
 
 
-            <font size=2>
+
               <p> Vous n'avez pas de compte ? <a href="inscription">Inscrivez-vous.</a> </p>
 
               <p> * Champs obligatoires </p>
-            </font>
+
           </form>
     </section>
     
