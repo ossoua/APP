@@ -106,6 +106,7 @@
               <input class="lancer" type="submit" value="Lancement du test">
             </p>
           </form>
+
         </div>
 
 </section>
