@@ -12,6 +12,8 @@
 <div class="décompte">
   <h1 id="count">10</h1>
 </div>
+<?php if(isset($_POST['code'])){echo $_POST['code'];}
+else {echo"Pas de code récupéré";} ?>
 
 </body>
 </html>

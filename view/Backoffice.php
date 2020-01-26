@@ -18,7 +18,7 @@
                                                                            width=20px></a>
             <a href="#section2">Lancer un test <img src="./view/img/test.png" alt="test" width=20px></a>
             <a href="#section3">Modifier la FAQ <img src="./view/img/FAQ.png" alt="FAQ" width=20px></a>
-            
+
         </div>
 
         <div class="conteneur">
@@ -77,37 +77,35 @@
 
         <div class="conteneur">
             <h1>Lancer un test</h1>
+            <form method="post" action="/view/AdminTest.php">
             Code d'accès :
             <div class="text">
-            <input type="text" name="code">
-          </div>
+              <input type="text" name="code">
+            </div>
             Fréquence cardiaque :
             <div class="testForm">
-                <input type="checkbox" name="cardiaque">
+              <input type="checkbox" name="cardiaque">
             </div>
             Température de la peau :
             <div class="testForm">
-                <input type="checkbox" name="peau">
+              <input type="checkbox" name="peau">
             </div>
             Reconnaissance de tonalité :
             <div class="testForm">
-                <input type="checkbox" name="tonalité">
+              <input type="checkbox" name="tonalité">
             </div>
             Signal sonore innattendu :
             <div class="testForm">
-                <input type="checkbox" name="son">
+              <input type="checkbox" name="son">
             </div>
             Signal visuel répété :
             <div class="testForm">
-                <input type="checkbox" name="vision">
+              <input type="checkbox" name="vision">
             </div>
             <p>
-                <a href="/view/AdminTest.php">
-                  <div class="lancer">
-                    <input type="submit" value="Lancement du test">
-                  </div>
-                </a>
+              <input class="lancer" type="submit" value="Lancement du test">
             </p>
+          </form>
         </div>
 
 </section>

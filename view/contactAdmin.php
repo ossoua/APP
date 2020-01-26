@@ -13,7 +13,7 @@
 
 <h1>Contacter un administrateur</h1>
 
-<form action="">
+<form action="/administration" method="post">
     <select name="subject">
         <option value="admin">Je souhaites devenir administrateur</option>
         <option value="test">J'ai un problème avec l'affichage de mes données de test</option>
