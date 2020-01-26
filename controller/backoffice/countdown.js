@@ -8,7 +8,7 @@ function startTimer(duration, display) {
     display.innerText = seconds;
 
     if (--timer < 0) {
-      display.innerText = "Début";
+      display.innerText = "Test";
     }
   }, 1000);
 }
