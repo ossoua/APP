@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <title>BackOffice</title>
     <link rel="stylesheet" href="/view/stylesheets/style_header.css">
-    <link rel="stylesheet" href="/view/stylesheets/style_back.css">
+    <link rel="stylesheet" href="/view/stylesheets/style_admintest.css">
 
 </head>
 <body>
-<?php echo $_POST["code"];?>
 
 
 </body>
