@@ -51,6 +51,6 @@
     <img class="personnage" src="../view/img/1.png" alt="personnage">
 </section>
 
-
+<?php require './view/footer.php'?>
 </body>
 </html>

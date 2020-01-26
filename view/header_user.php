@@ -1,7 +1,7 @@
 <header>
     <div id="logo">
         <img src="/view/img/logo_produit.png" alt="Logo Produit" width="100px">
-        <img class="padding_menu" src="/view/img/DrivingAces.png" alt="DrivingAces" width="230px">
+        <a href="/"><img class="padding_menu" src="/view/img/DrivingAces.png" alt="DrivingAces" width="230px"></a>
     </div>
 
     <div class="help">

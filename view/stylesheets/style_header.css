@@ -27,10 +27,10 @@ nav ul{
 }
 header{
   width: 100%;
+  height: 80px;
   left: 0;
   right: 0;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-color: white;
@@ -93,7 +93,7 @@ footer {
 .profil_content {
   display: none;
   position: absolute;
-  background-color: #eee;
+  background-color: #ffffff;
   width: 166px;
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
 
@@ -110,7 +110,7 @@ footer {
   display: block;
 }
 
-.profil_content a:hover {background-color: #ccc ;}
+.profil_content a:hover {background-color: #f9f9f9;}
 
 .profil_admin:hover .profil_content {display: block;}
 

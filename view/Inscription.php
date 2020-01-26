@@ -61,6 +61,7 @@
     </form>
   </section>
 
+<?php require './view/footer.php'?>
 </body>
 
 </html>
