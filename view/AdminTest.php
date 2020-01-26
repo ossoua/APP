@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="décompte">
-  <h1>10</h1>
+  <h1 id="count">10</h1>
 </div>
 
 </body>
