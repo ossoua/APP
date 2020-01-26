@@ -1,10 +1,22 @@
-var counter = document.getElementById("count").textContent;
+setState = 10;
 
-var countdown = setInterval(function() {
-  counter--;
-  document.getElementById("count").textContent = counter;
-  if(counter <= 0) clearInterval(countdown);
-}, 1000);
+function countdown() {
+	setState--;
+	document.getElementById("count").setState = timeleft;
+	if (timeleft > 0) {
+		setTimeout(countdown, 1000);
+	}
+};
+
+setTimeout(countdown, 1000);
+
+//var counter = document.getElementById("count").textContent;
+
+//var countdown = setTimeout(function() {
+//  counter--;
+//  document.getElementById("count").textContent = counter;
+//  if(counter <= 0) clearInterval(countdown);
+//}, 1000);
 
 //setInterval(countDown(){
 //  counter--;
