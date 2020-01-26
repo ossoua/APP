@@ -13,7 +13,6 @@
         <img class="connection" src="/view/img/DrivingAces.png" alt="DrivingAces" width="200px">
 
           <form method="post" action="/user/connection">
-            <p>
 
               <label for="mail">Adresse mail </label>
               <input type="email" name="mail" id="mail" required/>

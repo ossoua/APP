@@ -60,7 +60,7 @@ class UserManager extends Manager
 
         $i=0;
         foreach ($this->data as $row){
-            $this->users[$i] = $row['first_name'] . " " . $row['name'] . " <br> Code d'accès: " . $row['access_code'];
+            $this->users[$i] = $row['first_name'] . " " . $row['name'] . " <br>Code d'accès: " . $row['access_code'];
             $i++;
         }
 

@@ -12,9 +12,9 @@ $usersLength = count($users);
 
 $selected_users = [];
 
-if (isset($_GET['search'])) {
+if (isset($_GET['search']) && $_GET['search'] != "") {
     for ($i = 0; $i < $usersLength; $i++) {
-        if (stripos($users[$i], strval($_GET['search'])) === 0) {
+        if (stripos($users[$i], strval("".$_GET['search'])) !== false) {
             array_push($selected_users, $users[$i]);
         }
     }
