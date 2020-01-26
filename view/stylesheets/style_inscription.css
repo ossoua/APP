@@ -1,10 +1,10 @@
 section{
-  padding-top: 10%;
+  padding-top: 5%;
 }
 form {
   display: block;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 34%;
+  margin-right: 34%;
   align-content: center;
   text-align: left;
 
@@ -23,6 +23,7 @@ form label {
 
 label, input{
   padding-top :3%;
+  height: 20px;
 
 }
 label.inline {
@@ -30,10 +31,10 @@ label.inline {
 }
 input, textarea {
  padding:4px;
- border:1px solid #1C96E8;
+ border:1px solid #00A6EB;
  border-radius:5px;
  width:100%;
- box-shadow:1px 1px 2px #C0C0C0 inset;
+ box-shadow:0.5px 0.5px 2px #C0C0C0 inset;
  outline-style: none;
 }
 
@@ -46,9 +47,16 @@ input[type=checkbox]{
   box-shadow: none;
   cursor:pointer;
 }
-a, span.remarque {
+span.remarque {
   color: #1C96E8;
   font-size: 12px;
+}
+p a {
+  color: #1C96E8;
+  font-size: 12px;
+}
+label a {
+  color: #1C96E8;
 }
 span.conditions {
   color: #00A6EB;
@@ -57,4 +65,15 @@ span.conditions {
 p.error {
     text-align: center;
     color: red;
+}
+input[type=submit]{
+  max-width: 200px;
+  height: 30px;
+  background-color: #00A6EB;
+  box-shadow: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+
 }

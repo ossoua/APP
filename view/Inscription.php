@@ -44,16 +44,16 @@
 
       <label for="access_code">Code d'accès *</label>
       <input type="text" name="access_code" id="access_code" required /></br>
-
+      <br>
       <input type="checkbox" name="conditions" id="conditions" required />
-      <label for="conditions" class=inline>J'ai lu et j'accepte les <a href="/user/CGU">conditions générales d'utilisation</a> </label>
-
-      <input type="submit" value="S'inscrire" /></br>
+      <label for="conditions" class=inline>J'ai lu et j'accepte les <a href="/user/CGU">conditions générales d'utilisation</a></label>
+      <p></p>
+      <center><input type="submit" value="S'inscrire" /></center></br>
 
 
       <font size=2>
       <center><p> Vous avez déjà un compte ? <a href="/user/connection">Connectez-vous</a> </p></center>
-
+      <br>
       <div align="right"><p> * Champs obligatoires </p></div>
       </font>
 

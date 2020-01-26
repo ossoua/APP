@@ -19,6 +19,10 @@ if (isset($_POST['vision'])) {
   setcookie("vision", $cookie_vision, time() + (40), "/");
 }
 
+if (isset($_POST['tonalité']) || isset($_POST['son']) || isset($_POST['vision'])) {
+  header('Location: /controller/admintest_control');
+}
+
 if(isset($_COOKIE["tonalité"])) {
   $message = "Reconnaissance de tonalité";
 }
