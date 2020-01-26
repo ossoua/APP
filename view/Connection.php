@@ -10,7 +10,7 @@
   <?php require './view/header_accueil.php'?>
 
     <section>
-        <img class="connection" src="/view/img/DrivingAces.png" alt="DrivingAces" width="200px">
+        <h1> Connectez-vous</h1>
 
           <form method="post" action="/user/connection">
             <p>
@@ -20,10 +20,9 @@
 
               <label for="password">Mot de passe </label>
               <input type="password" name="password" id="password"required/>
-              <center><a href="motdepasse.html"> Mot de passe oublié?</a></center>
-              <br>
+              <center><p><a href="motdepasse.html"> Mot de passe oublié?</a></p></center>
 
-              <input type="submit" value="Se connecter" /></br>
+              <center><input type="submit" value="Se connecter" /></center></br>
 
 
               <font size=2>
