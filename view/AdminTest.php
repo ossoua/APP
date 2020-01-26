@@ -5,15 +5,14 @@
     <title>BackOffice</title>
     <link rel="stylesheet" href="/view/stylesheets/style_header.css">
     <link rel="stylesheet" href="/view/stylesheets/style_admintest.css">
-    <script src=countdown.js></script>
 
 </head>
 <body>
 <div class="décompte">
-  <h1 id="count">10</h1>
+  <h1 id="count"></h1>
 </div>
-<?php if(isset($_POST['code'])){echo $_POST['code'];}
+<?php if(isset($_POST['cardiaque'])){echo $_POST['cardiaque'];}
 else {echo"Pas de code récupéré";} ?>
-
+<script src=/controller/backoffice/countdown.js></script>
 </body>
 </html>
