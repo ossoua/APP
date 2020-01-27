@@ -2,7 +2,9 @@
 
 session_start();
 
-$message = "";
+if (isset($_POST['tonalité']) || isset($_POST['son']) || isset($_POST['vision'])) {
+  header('Location: /controller/admintest_control');
+}
 
 if (isset($_POST['tonalité'])) {
   $cookie_tonalite = $_POST['tonalité'];
@@ -19,10 +21,6 @@ if (isset($_POST['vision'])) {
   setcookie("vision", $cookie_vision, time() + (40), "/");
 }
 
-if (isset($_POST['tonalité']) || isset($_POST['son']) || isset($_POST['vision'])) {
-  header('Location: /controller/admintest_control');
-}
-
 if(isset($_COOKIE["tonalité"])) {
   $message = "Reconnaissance de tonalité";
 }
@@ -33,6 +31,9 @@ else if(isset($_COOKIE["son"])) {
 
 else if(isset($_COOKIE["vision"])) {
   $message = "Réaction à un signal visuel attendu";
+}
+else{
+  $message = "Veuillez quitter le test";
 }
 
 require $_SERVER['DOCUMENT_ROOT'].'/view/AdminTest.php';
