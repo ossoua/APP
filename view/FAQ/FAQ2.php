@@ -18,7 +18,7 @@
 
       <div id="profil">
           <div class="profil_admin">
-              <a href="/user/profil"><button class="profil_btn"><img src="/view/img/account.png" width="35px"></button></a>
+              <a href="/user/connection"><button class="profil_btn"><img src="/view/img/account.png" width="35px"></button></a>
           </div>
       </div>
 

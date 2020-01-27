@@ -10,7 +10,7 @@
 <?php require './view/header_accueil.php' ?>
 
 <section>
-    <img class="connection" src="/view/img/DrivingAces.png" alt="DrivingAces" width="200px">
+    <img style="margin-left: 43%" class="connection" src="/view/img/DrivingAces.png" alt="DrivingAces" width="200px">
 
     <form method="post" action="/user/reset">
 

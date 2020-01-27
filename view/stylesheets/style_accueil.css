@@ -2,14 +2,12 @@ body{
   height: 100%;
   margin: 0;
   overflow: hidden;
-  min-width: fit-content;
 }
 
 .wraper{
   display: flex;
   color: #707070;
   justify-content: space-around;
-  align-items: flex-end;
 }
 
 #page_accueil{
@@ -39,11 +37,10 @@ section{
 
 .bandeau{
   margin-top: 80px;
-  height: 180px;
   background-color: #99D0F5;
 }
 
-ul{
+.bandeau ul{
   text-align: center;
   list-style-type: none;
   color: black;
@@ -103,15 +100,36 @@ h1.formulaire{
   color:grey;
 }
 
-#formulaire{
-
-}
 
 .colonne{
   margin-bottom: 5%;
-
+  left: 0;
 }
 
 #envoyer{
   margin-left: 50%;
+}
+
+@media only screen and (max-width: 850px) {
+  .bandeau ul{
+    flex-direction: column;
+  }
+
+  .column_responsive{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .wraper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .colonne{
+    margin-left: 0;
+  }
+  .personnage{
+    display: none;
+  }
 }

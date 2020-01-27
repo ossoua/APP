@@ -1,9 +1,10 @@
 <header>
-    <div id="logo">
-        <img src="/view/img/logo_produit.png" alt="Logo Produit" width="100px">
-        <img class="padding_menu" src="/view/img/DrivingAces.png" alt="DrivingAces" width="230px">
+    <div>
+        <div id="logo">
+            <img src="/view/img/logo_produit.png" alt="Logo Produit" width="100px">
+            <img class="padding_menu" src="/view/img/DrivingAces.png" alt="DrivingAces" width="230px">
+        </div>
     </div>
-
 
     <nav>
         <ul>
@@ -17,10 +18,10 @@
         </ul>
     </nav>
 
-
-    <div id="espace_client">
-        <a href="/user/connection">Espace client</a>
-        <img class="padding_menu" src="/view/img/user@2x.png" alt="icone_user" width="35px">
+    <div>
+        <div id="espace_client">
+            <a href="/user/connection">Espace client</a>
+            <img class="padding_menu" src="/view/img/user@2x.png" alt="icone_user" width="35px">
+        </div>
     </div>
-
 </header>
