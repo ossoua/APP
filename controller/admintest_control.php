@@ -2,9 +2,7 @@
 
 session_start();
 
-$message = " ";
-
-$erreur = "";
+$message = "";
 
 if (isset($_POST['tonalité'])) {
   $cookie_tonalite = $_POST['tonalité'];
