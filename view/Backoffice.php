@@ -78,30 +78,49 @@
         <div class="conteneur">
             <h1>Lancer un test</h1>
             <form method="post" action="/backoffice/test">
-            Code d'accès :
-            <div class="text">
-              <input type="text" name="code">
-            </div>
-            Fréquence cardiaque :
-            <div class="testForm">
+              Code d'accès :
+              <input class="text" type="text" name="code">
+              <br>
+
+              <br>
+              Tests primaires :
+              <br>
+              <label class="container">
+              <input type="checkbox" name="tonalité" checked="checked">
+              Reconnaissance de tonalité
+              </label>
+
+              <br>
+              <label class="container">
+              <input type="checkbox" name="son" checked="checked">
+              Signal sonore innattendu
+              </label>
+
+
+              <br>
+              <label class="container">
+              <input type="checkbox" name="vision" checked="checked">
+              Signal visuel répété
+              </label>
+              <br>
+
+              <br>
+              Tests secondaires :
+              <br>
+              <label class="container">
               <input type="checkbox" name="cardiaque">
-            </div>
-            Température de la peau :
-            <div class="testForm">
+              Fréquence cardiaque
+              </label>
+
+
+              <br>
+              <label class="container">
               <input type="checkbox" name="peau">
-            </div>
-            Reconnaissance de tonalité :
-            <div class="testForm">
-              <input type="checkbox" name="tonalité">
-            </div>
-            Signal sonore innattendu :
-            <div class="testForm">
-              <input type="checkbox" name="son">
-            </div>
-            Signal visuel répété :
-            <div class="testForm">
-              <input type="checkbox" name="vision">
-            </div>
+              Température de la peau
+              </label>
+              <br>
+
+              <br>
             <p>
               <input class="lancer" type="submit" value="Lancement du test">
             </p>
