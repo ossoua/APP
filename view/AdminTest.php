@@ -9,7 +9,7 @@
 </head>
 <body>
       <?php
-  if(strcmp($message, "Veuillez quitter le test") == 0)
+  if(strcmp($message, "Test terminé, vous pouvez quitter") == 0)
   {
        ?>
        <br>
