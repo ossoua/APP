@@ -8,13 +8,26 @@
 
 </head>
 <body>
+      <?php
+  if(strcmp($message, "Veuillez quitter le test") == 0)
+  {
+       ?>
+       <br>
+       <button type="button" name="button1" disabled>Passer au test suivant</button>
+       <?php
+  }
+  else
+  {
+    ?>
     <div class="décompte">
       <h1 id="count"></h1>
     </div>
     <script src=/controller/backoffice/countdown.js></script>
     <br>
     <a href="/controller/admintest_control.php">
-      <button type="button" name="button1">Passer au test suivant</button>
+    <button type="button" name="button1">Passer au test suivant</button>
+    <?php
+  }?>
     </a><br>
     <br>
     <a href="/">
