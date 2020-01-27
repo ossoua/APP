@@ -26,9 +26,10 @@
         </tbody>
     </table>
       <div class="wraper">
-          <button onclick="drawChart()">Afficher mes données sour forme de graphiques</button>
+          <p><button onclick="drawChart()">Afficher mes données sous forme de graphiques</button></p>
+          <div id="chart_div"></div>
       </div>
-      <div id="chart_div"></div>
+
 
 
 

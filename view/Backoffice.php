@@ -32,7 +32,7 @@
             <br>
 
             <div id="selected">
-                <form  id="modify" action="/backoffice" method="post"></form>
+                <form id="modify" action="/backoffice" method="post"></form>
             </div>
             <br>
 
@@ -170,10 +170,14 @@
             </table>
             <button onclick="modifyFaq()">Ajouter une entrée</button>
             <form id="modifyFaq" action="/backoffice" method="post"></form>
+            <p class="error"><?php
+                if (isset($_COOKIE['error'])) {
+                    echo $_COOKIE['error'];
+                } ?>
+            </p>
         </div>
     </div>
 </section>
-
 
 
 <script src="./controller/backoffice/autocompletion.js"></script>

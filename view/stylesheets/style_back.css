@@ -99,3 +99,7 @@ input[type="checkbox"]{
   padding: 12px 20px;
   box-sizing: border-box;
 }
+
+.error{
+  color: red;
+}

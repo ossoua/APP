@@ -5,6 +5,8 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/model/FAQManager.php';
 $user = new UserManager();
 $faq = new FAQManager();
 
+$error = "";
+
 $codes = $user->getFreeCodes();
 $faqQuestions = $faq->getQuestions();
 $faqRep = $faq->getRep();
@@ -63,7 +65,12 @@ if (isset($_POST['name']) && isset($_POST['first_name']) && isset($_POST['adress
 } else if (isset($_POST['question']) && isset($_POST['reponse'])) {
     if ($_POST['question'] != "" && $_POST['reponse'] != "") {
         $faq->newFaq($_POST['question'], $_POST['reponse']);
-        header('Location: /backoffice');
+        header('Location: /backoffice#section3');
+        setcookie('error',"");
+    }
+    else{
+        setcookie('error',"Veuillez remplir tous les champs");
+        header('Location: /backoffice#section3');
     }
 } else if (isset($_POST['id'])) {
     $faq->removeFaq($_POST['id']);
