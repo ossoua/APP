@@ -32,7 +32,7 @@
             <br>
 
             <div id="selected">
-                <form  id="modify" action="/backoffice" method="post"></form>
+                <form id="modify" action="/backoffice" method="post"></form>
             </div>
             <br>
 
@@ -78,64 +78,62 @@
         <div class="conteneur">
             <h1>Lancer un test</h1>
             <form method="post" action="/backoffice/test" onsubmit="return validation();">
-              Code d'accès :
-              <input class="text" type="text" name="code">
-              <br>
+                Code d'accès :
+                <input class="text" type="text" name="code">
+                <br>
 
-              <br>
-              Tests primaires :
-              <br>
-              <label class="container">
-              <input id="box1" type="checkbox" name="tonalité" checked="checked">
-              Reconnaissance de tonalité
-              </label>
+                <br>
+                Tests primaires :
+                <br>
+                <label class="container">
+                    <input id="box1" type="checkbox" name="tonalité" checked="checked">
+                    Reconnaissance de tonalité
+                </label>
 
-              <br>
-              <label class="container">
-              <input id="box2" type="checkbox" name="son" checked="checked">
-              Signal sonore innattendu
-              </label>
-
-
-              <br>
-              <label class="container">
-              <input id="box3" type="checkbox" name="vision" checked="checked">
-              Signal visuel répété
-              </label>
-              <br>
-
-              <script>
-              function validation()
-              {
-                if((document.getElementById('box1').checked == false) && (document.getElementById('box2').checked == false) && (document.getElementById('box3').checked == false))
-                {
-                  alert("Veuillez sélectionner l'un des trois tests primaires");
-                  return false;
-                }
-              }
-              </script>
-
-              <br>
-              Tests secondaires :
-              <br>
-              <label class="container">
-              <input type="checkbox" name="cardiaque">
-              Fréquence cardiaque
-              </label>
+                <br>
+                <label class="container">
+                    <input id="box2" type="checkbox" name="son" checked="checked">
+                    Signal sonore innattendu
+                </label>
 
 
-              <br>
-              <label class="container">
-              <input type="checkbox" name="peau">
-              Température de la peau
-              </label>
-              <br>
+                <br>
+                <label class="container">
+                    <input id="box3" type="checkbox" name="vision" checked="checked">
+                    Signal visuel répété
+                </label>
+                <br>
 
-              <br>
-            <p>
-              <input class="lancer" type="submit" value="Lancement du test">
-            </p>
-          </form>
+                <script>
+                    function validation() {
+                        if ((document.getElementById('box1').checked == false) && (document.getElementById('box2').checked == false) && (document.getElementById('box3').checked == false)) {
+                            alert("Veuillez sélectionner l'un des trois tests primaires");
+                            return false;
+                        }
+                    }
+                </script>
+
+                <br>
+                Tests secondaires :
+                <br>
+                <label class="container">
+                    <input type="checkbox" name="cardiaque">
+                    Fréquence cardiaque
+                </label>
+
+
+                <br>
+                <label class="container">
+                    <input type="checkbox" name="peau">
+                    Température de la peau
+                </label>
+                <br>
+
+                <br>
+                <p>
+                    <input class="lancer" type="submit" value="Lancement du test">
+                </p>
+            </form>
 
         </div>
 
@@ -168,10 +166,14 @@
             </table>
             <button onclick="modifyFaq()">Ajouter une entrée</button>
             <form id="modifyFaq" action="/backoffice" method="post"></form>
+            <p class="error"><?php
+                if (isset($_COOKIE['error'])) {
+                    echo $_COOKIE['error'];
+                } ?>
+            </p>
         </div>
     </div>
 </section>
-
 
 
 <script src="./controller/backoffice/autocompletion.js"></script>

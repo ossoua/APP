@@ -14,12 +14,13 @@
 <h1>Contacter un administrateur</h1>
 
 <form action="/administration" method="post">
+    Sélectionnez un sujet: <br><br>
     <select name="subject">
         <option value="admin">Je souhaites devenir administrateur</option>
         <option value="test">J'ai un problème avec l'affichage de mes données de test</option>
         <option value="other">Autre demande</option>
     </select> <br><br><br>
-    Veuillez préciser votre demande: <br>
+    Précisez votre demande: <br>
     <textarea rows="10" name="message">Votre message ici...</textarea>
     <input type="submit" value="Envoyer">
 </form>
