@@ -78,6 +78,8 @@
         <div class="conteneur">
             <h1>Lancer un test</h1>
             <form method="post" action="/backoffice/test" onsubmit="return validation();">
+              <?php $message = ""; ?>
+
               Code d'accès :
               <input class="text" type="text" name="code">
               <br>
