@@ -85,15 +85,17 @@ table, caption {
   width: 500px;
 }
 
-.testForm{
-  width: 3%;
-}
-
 .content{
   margin-left: 40%;
   max-width: 40%;
 }
 
 .text{
-  width: 30%
+  width: 30%;
+}
+
+input[type="checkbox"]{
+  width: 30%;
+  padding: 12px 20px;
+  box-sizing: border-box;
 }
