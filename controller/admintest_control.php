@@ -2,13 +2,9 @@
 
 session_start();
 
-$message = "Quitter le test";
+$message = " ";
 
 $erreur = "";
-
-if((!isset($_POST['tonalité'])) && (!isset($_POST['son'])) && (!isset($_POST['vision']))) {
-  header('Location: /backoffice#section2');
-}
 
 if (isset($_POST['tonalité'])) {
   $cookie_tonalite = $_POST['tonalité'];
