@@ -33,7 +33,7 @@ else if(isset($_COOKIE["vision"])) {
   $message = "Réaction à un signal visuel attendu";
 }
 else{
-  $message = "Veuillez quitter le test";
+  $message = "Test terminé, vous pouvez quitter";
 }
 
 require $_SERVER['DOCUMENT_ROOT'].'/view/AdminTest.php';
