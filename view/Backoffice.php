@@ -77,7 +77,7 @@
 
         <div class="conteneur">
             <h1>Lancer un test</h1>
-            <form method="post" action="/backoffice/test">
+            <form method="post" action="/backoffice/test" onsubmit="return validation();">
               Code d'accès :
               <input class="text" type="text" name="code">
               <br>
@@ -86,23 +86,34 @@
               Tests primaires :
               <br>
               <label class="container">
-              <input type="checkbox" name="tonalité" checked="checked">
+              <input id="box1" type="checkbox" name="tonalité" checked="checked">
               Reconnaissance de tonalité
               </label>
 
               <br>
               <label class="container">
-              <input type="checkbox" name="son" checked="checked">
+              <input id="box2" type="checkbox" name="son" checked="checked">
               Signal sonore innattendu
               </label>
 
 
               <br>
               <label class="container">
-              <input type="checkbox" name="vision" checked="checked">
+              <input id="box3" type="checkbox" name="vision" checked="checked">
               Signal visuel répété
               </label>
               <br>
+
+              <script>
+              function validation()
+              {
+                if((document.getElementById('box1').checked == false) && (document.getElementById('box2').checked == false) && (document.getElementById('box3').checked == false))
+                {
+                  alert("Veuillez sélectionner l'un des trois tests primaires");
+                  return false;
+                }
+              }
+              </script>
 
               <br>
               Tests secondaires :
